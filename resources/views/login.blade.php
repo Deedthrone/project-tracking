@@ -11,13 +11,13 @@
     <div class="container">
         <form action="index.html" method="post"></form>
         <h1>Login</h1>
-        <div class="logForm">
-            <label for=""> Username<input type="text"></label>
+        <div class="username">
+            <label for=""> Username</label><input type="text" placeholder="Username">
         </div>
-        <div class="logfrom">
-            <label for=""> Password<input type="password" name="" id=""></label>
+        <div class="password">
+            <label for=""> Password</label><input type="password" name="" id="" placeholder="Password">
         </div>
-        <div class="logform">
+        <div class="submit">
             <button>Submit</button>
         </div>
     </div>

@@ -56,18 +56,69 @@ body {
     color: white;
 }
 
+
+
 .container {
     width: 600px;
     height: 800px;
     background-color: rgb(36, 36, 36);
+	margin: auto;
+	margin-top: 100px;
 }
 
-.logForm label {
-    margin-top: 10px;
-    margin-bottom: 30px;
-
+.container h1
+{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 250px;
+	margin-bottom: 80px;
+	margin-top: 80px;
 }
 
-.logForm input {
-    margin-left: 30px;
+
+.username label {
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 100px;
+}
+
+.password label {
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 100px;
+}
+
+.username{
+	margin-bottom: 50px;
+}
+
+.username input {
+	margin-left: 30px;
+	border: 0;
+	background: none;
+	border: 2px solid #e08a09;
+	padding: 14px 10px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	text-align: center;
+}
+
+
+.password input {
+    margin-left: 35px;
+	border: 0;
+	background: none;
+	border: 2px solid #e08a09;
+	padding: 14px 10px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	text-align: center;
+}
+
+.submit {
+	margin-top: 40px;
 }
