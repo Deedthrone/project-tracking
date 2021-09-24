@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/image/logo/deedthrone.jpg">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style/login.css">
-    <title>Login</title>
+    <title>Project Tracking | Login</title>
 </head>
 <body>
     <div class="container">
         <h1>Login</h1>
         <hr>
         <form action="" method="post">
+
+        <!-- USERNAME -->
             <div class="field">
-            <i class='bx bxs-user'></i>
-                <span class="tooltip"></span>
-            <input type="text" placeholder="Username" require>
+                <i class='bx bxs-user bx-sm'></i>
+                    <span class="tooltip"></span>
+                <input type="text" placeholder="Username" require>
             <hr>
             </div>
+        <!-- PASSWORD -->
             <div class="field">
-            <i class='bx bx-key' ></i>
-                <span class="tooltip"></span>
-            <input type="password" placeholder="Password" require>
+                <i class='bx bxs-lock-alt bx-sm' ></i>
+                    <span class="tooltip"></span>
+                <input type="password" placeholder="Password" require>
             <hr>
-            </div class="btn">
-                <input type="submit" placeholder="Submit" value="Login">
+
+        <!-- FORGOT YOUR PASSWORD -->
+            <div class="lupaPass">
+                <a href="">Forgot your password?</a>
             </div>
+
+            <input type="submit" value="Login">  
         </form>
     </div>
 </body>
