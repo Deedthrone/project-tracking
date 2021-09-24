@@ -15,7 +15,7 @@
   <body>
 
   <header>
-  @include('partials.navbar')
+  @include('partials.sidebar')
   </header>
 
 
