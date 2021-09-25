@@ -4,12 +4,13 @@
 
 <div class="sidebar">
   <div class="logo">
-    <img src="image/logo/deedthrone.jpg" alt=""> <label for="">ProTrack</label>
-    <i class='bx bx-menu-alt-right bx-md' ></i>
+    <img src="image/logo/deedthrone.jpg" alt=""> 
+    <label for="">DEEDTHRONE</label>
+    <i class='bx bx-menu-alt-right bx-sm' ></i>
   </div>
   <ul>
     <li>
-      <!-- SEARCh -->
+      <!-- Search -->
     <i class='bx bx-search-alt bx-sm'></i>
       <input type="text" placeholder="Search . ."><span class="tooltip"></span>
     </li>
@@ -19,6 +20,7 @@
     <i class='bx bx-home bx-sm'></i>
     <span class="tooltip"></span>
       <a href="">Home</a>
+      
     </li>
 
     <!-- My Task -->
@@ -26,6 +28,7 @@
     <i class='bx bx-task bx-sm'></i>
     <span class="tooltip"></span>
       <a href="">My Task</a>
+      
     </li>
 
     <!-- Inbox -->
@@ -33,6 +36,7 @@
     <i class='bx bxs-message-rounded-dots bx-sm' ></i>
     <span class="tooltip"></span>
       <a href="">Inbox</a>
+      
     </li>
 
     <!-- Chart -->
@@ -40,6 +44,7 @@
     <i class='bx bxs-bar-chart-alt-2 bx-sm' ></i>
     <span class="tooltip"></span>
       <a href="">Chart</a>
+      
     </li>
     
     <!-- Goal -->
@@ -49,4 +54,7 @@
       <a href="">Goal</a>
     </li>
   </ul>
+  <div class="sidefoot">
+
+  </div>
 </div>
