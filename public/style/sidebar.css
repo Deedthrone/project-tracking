@@ -1,8 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
 }
 
 /* Google Font Link */
@@ -13,11 +11,13 @@
 
 /* The side navigation menu */
 .sidebar {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(24, 24, 24);
   width: 300px;
   min-height:100%;
   position: fixed;
   color: white;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
 }
 
 
@@ -39,12 +39,16 @@
   left: 100px;
 }
 
-
+.sidebar li {
+  margin: 40px 0px;
+  list-style-type: none;
+}
 
 .sidebar li a {
   color: white;     
   text-decoration: none;
   color: grey;
+  font-weight: bold;
 
 }
 

@@ -13,14 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/asdasda', function () {
+Route::get('/laravel', function () {
     return view('welcome');
 });
 
-
-
 Route::get('/login', function () {
-    return view('login', [
+    return view('page/login', [
         "title" => "login"
     ]);
 });
@@ -28,5 +26,29 @@ Route::get('/login', function () {
 Route::get('/home', function () {
     return view('home', [
         "title" => "Home"
+    ]);
+});
+
+Route::get('/task', function () {
+    return view('page/mytask', [
+        "title" => "login"
+    ]);
+});
+
+Route::get('/inbox', function () {
+    return view('page/inbox', [
+        "title" => "login"
+    ]);
+});
+
+Route::get('/chart', function () {
+    return view('page/chart', [
+        "title" => "login"
+    ]);
+});
+
+Route::get('/goal', function () {
+    return view('page/goal', [
+        "title" => "login"
     ]);
 });

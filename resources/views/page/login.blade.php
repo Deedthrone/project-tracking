@@ -10,6 +10,10 @@
     <title>Project Tracking | Login</title>
 </head>
 <body>
+
+    <div class="info">
+        
+    </div>
     <div class="container">
         <h1>Login</h1>
         <hr>
