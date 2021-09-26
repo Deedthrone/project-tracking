@@ -1,94 +1,113 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   font-family: "Poppins" , sans-serif;
 }
 
-/* Google Font Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
- 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-
-/* The side navigation menu */
-.sidebar {
-  background-color: rgb(19, 19, 19);
-  width: 300px;
-  min-height:100%;
+/* LOGO */
+.logo {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.logo i[class="bx bx-menu-alt-right bx-sm"]
+{
   position: fixed;
+  left: 260px;
+}
+
+.logo label {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  bottom: 3px;
+  left: 10  px;
+}
+
+/* SIDEBAR */
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  background: #000000;
+  padding: 6px 10px;
+  transition: all 0.5s ease;
   color: white;
   box-sizing: border-box;
 }
 
-/* Logo Heading */
-
-.logo {
-  padding: 40px 0px;
-  background-color: rgb(31, 31, 31);
+.sidebar li {
+  margin-top: 10px;
+  list-style: none;
 }
 
-.logo label {
-  font-size: 16px;
-  font-weight: bold;
+.sidebar li i {
   position: relative;
-  left: 40px;
-}
-
-.logo img{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  position: relative;
-  left: 20px;
-  
-}
-
-.logo i[class="bx bx-menu-alt-right bx-sm"] {
-  position: relative;
-  left: 100px;
-  top: 5px;
-}
-
-/* Sidebar */
-
-.sidebar input {
-  width: 250px;
-  height: 40px;
-  background: none;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  background-color: rgb(31, 30, 30);
+  top: 40px;
+  left: 10px;
   color: white;
+}
+
+.sidebar input{ 
+  width: 230px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(53, 53, 53);
   text-align: center;
 }
 
-.sidebar i[class="bx bx-search-alt bx-sm"] {
-  position: absolute;
-  top: 150px;
+.sidebar a button {
+  width: 230px;
+  height: 50px;
+  background: none;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
 }
 
-.sidebar li {
-  list-style: none;
-  margin: 40px 0px;
+.sidebar a button:hover {
+  background-color: rgb(31, 30, 30);
 }
 
-.sidebar li a {
-  color: white;     
+/* NAVFOOT */
+.navfoot {
+  position: fixed;
+  top: 940px;
+  left: 0px;
+  width: 300px;
+  height: 100px;
+  background-color: rgb(15, 15, 15);
+  padding-top: 20px;
+}
+
+.navfoot i {
+  position: relative;
+  top: 5px;
+  left: 50px;
+  color: white;
+}
+
+.navfoot a {
   text-decoration: none;
-  font-weight: 500;
 }
 
-.sidebar i {
-  position: relative;
-  top: 3px;
+.navfoot a button {
+  width: 230px;
+  height: 50px;
+  background: none;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-align: center;
 }
 
-/* Sidenav Footer */
-
-.sidefoot {
-  position: relative;
-  top: 360px;
-  height: 150px;
-  background-color: rgb(31, 31, 31);
+.navfoot a button:hover {
+  background-color: rgb(31, 30, 30);
 }

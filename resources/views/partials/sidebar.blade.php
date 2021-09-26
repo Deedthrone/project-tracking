@@ -1,60 +1,61 @@
-
-
-
-
 <div class="sidebar">
   <div class="logo">
-    <img src="image/logo/deedthrone.jpg" alt=""> 
-    <label for="">DEEDTHRONE</label>
+    <i class='bx bxl-codepen bx-sm'></i>
+    <label for="">deedthrone.lc</label>
     <i class='bx bx-menu-alt-right bx-sm' ></i>
   </div>
   <ul>
-    <li>
-      <!-- Search -->
-    <i class='bx bx-search-alt bx-sm'></i>
-      <input type="text" placeholder="Search . ."><span class="tooltip"></span>
+  <li>
+        <i class='bx bx-search-alt bx-sm'></i>
+        <span class="tooltip"></span>
+        <input type="text" placeholder="Search..">
     </li>
 
-    <!-- Home -->
     <li>
-    <i class='bx bx-home bx-sm'></i>
-    <span class="tooltip"></span>
-      <a href="">Home</a>
-      
+      <a href="">
+        <i class='bx bx-home bx-sm' ></i>
+        <span class="tooltip"></span>
+        <button>Home</button>
+      </a>
     </li>
 
-    <!-- My Task -->
     <li>
-    <i class='bx bx-task bx-sm'></i>
-    <span class="tooltip"></span>
-      <a href="">My Task</a>
-      
+      <a href="">
+        <i class='bx bx-task bx-sm'></i>
+        <span class="tooltip"></span>
+        <button>My Task</button>
+      </a>
     </li>
 
-    <!-- Inbox -->
     <li>
-    <i class='bx bxs-message-rounded-dots bx-sm' ></i>
-    <span class="tooltip"></span>
-      <a href="">Inbox</a>
-      
+      <a href="">
+        <i class='bx bx-message-dots bx-sm' ></i>
+        <span class="tooltip"></span>
+        <button>Message</button>
+      </a>
     </li>
 
-    <!-- Chart -->
     <li>
-    <i class='bx bxs-bar-chart-alt-2 bx-sm' ></i>
-    <span class="tooltip"></span>
-      <a href="">Chart</a>
-      
+      <a href="">
+        <i class='bx bx-bar-chart-alt-2 bx-sm' ></i>
+        <span class="tooltip"></span>
+        <button>Chart</button>
+      </a>
     </li>
-    
-    <!-- Goal -->
+
     <li>
-    <i class='bx bxs-business bx-sm'></i>
-    <span class="tooltip"></span>
-      <a href="">Goal</a>
+      <a href="">
+        <i class='bx bx-message-dots bx-sm' ></i>
+        <span class="tooltip"></span>
+        <button>Goal</button>
+      </a>
     </li>
+      <div class="navfoot">
+      <a href="">
+        <i class='bx bx-log-out bx-sm' ></i>
+        <span class="tooltip"></span>
+        <button>Logout</button>
+      </a>
+      </div>
   </ul>
-  <div class="sidefoot">
-
-  </div>
 </div>
