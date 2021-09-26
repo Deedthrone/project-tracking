@@ -4,4 +4,8 @@
 
 <!-- ISI -->
 
+<div class="home">
+    
+</div>
+
 @endsection

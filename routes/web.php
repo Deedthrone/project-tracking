@@ -17,38 +17,38 @@ Route::get('/laravel', function () {
     return view('welcome');
 });
 
-Route::get('/login', function () {
+Route::get('/', function () {
     return view('page/login', [
         "title" => "login"
     ]);
 });
 
 Route::get('/home', function () {
-    return view('home', [
+    return view('page/home', [
         "title" => "Home"
     ]);
 });
 
 Route::get('/task', function () {
     return view('page/mytask', [
-        "title" => "login"
+        "title" => "task"
     ]);
 });
 
 Route::get('/inbox', function () {
     return view('page/inbox', [
-        "title" => "login"
+        "title" => "inbox"
     ]);
 });
 
 Route::get('/chart', function () {
     return view('page/chart', [
-        "title" => "login"
+        "title" => "chart"
     ]);
 });
 
 Route::get('/goal', function () {
     return view('page/goal', [
-        "title" => "login"
+        "title" => "goal"
     ]);
 });

@@ -5,14 +5,16 @@
     <i class='bx bx-menu-alt-right bx-sm' ></i>
   </div>
   <ul>
-  <li>
+    <li>
+        <!-- SEARCH -->
         <i class='bx bx-search-alt bx-sm'></i>
         <span class="tooltip"></span>
         <input type="text" placeholder="Search..">
     </li>
 
     <li>
-      <a href="">
+      <!-- HOME -->
+      <a href="home">
         <i class='bx bx-home bx-sm' ></i>
         <span class="tooltip"></span>
         <button>Home</button>
@@ -20,7 +22,8 @@
     </li>
 
     <li>
-      <a href="">
+      <!-- MY TASK -->
+      <a href="task">
         <i class='bx bx-task bx-sm'></i>
         <span class="tooltip"></span>
         <button>My Task</button>
@@ -28,7 +31,8 @@
     </li>
 
     <li>
-      <a href="">
+      <!-- MESSAGE -->
+      <a href="inbox">
         <i class='bx bx-message-dots bx-sm' ></i>
         <span class="tooltip"></span>
         <button>Message</button>
@@ -36,7 +40,8 @@
     </li>
 
     <li>
-      <a href="">
+      <!-- CHART -->
+      <a href="chart">
         <i class='bx bx-bar-chart-alt-2 bx-sm' ></i>
         <span class="tooltip"></span>
         <button>Chart</button>
@@ -44,14 +49,16 @@
     </li>
 
     <li>
-      <a href="">
+      <!-- GOAL -->
+      <a href="goal">
         <i class='bx bx-message-dots bx-sm' ></i>
         <span class="tooltip"></span>
         <button>Goal</button>
       </a>
     </li>
       <div class="navfoot">
-      <a href="">
+      <!-- LOGOUT -->
+      <a href="/">
         <i class='bx bx-log-out bx-sm' ></i>
         <span class="tooltip"></span>
         <button>Logout</button>
