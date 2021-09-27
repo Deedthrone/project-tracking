@@ -37,6 +37,7 @@
   transition: all 0.5s ease;
   color: white;
   box-sizing: border-box;
+  z-index: 3;
 }
 
 .sidebar li {
