@@ -1,11 +1,15 @@
 @extends('layouts.main')
 
-@section('container')
+@section('home')
 
 <!-- ISI -->
 
 <div class="home">
-    <h1>asdasds</h1>
+@include('partials.navbar') 
+    <div class="homecontent">
+        <h1>test</h1>
+    </div>
+    
 </div>
 
 @endsection

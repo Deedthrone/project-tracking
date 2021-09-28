@@ -22,7 +22,7 @@
   </header>
   
   <div class="main">
-    @yield('home')
+    @yield('mytask')
 </div>
 
   </div>

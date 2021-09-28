@@ -11,7 +11,7 @@ body {
   background-color: white;
   height: 100vh;
   padding: 0;
-  background: linear-gradient(120deg,#d30f0f, #ebb503);
+  background: linear-gradient(120deg,#1c3b75, #4289c4);
   overflow: hidden;
   background-repeat: no-repeat;
 }
@@ -94,8 +94,11 @@ body {
 	outline: none;
 	position: relative;
 	top: 40px;
+	border: none;
   }
+
   input[type="submit"]:hover{
+	border: 4px solid ;
 	border-color: #26d93e;
-	transition: .5s;
+	transition: 0.5s;
   }
