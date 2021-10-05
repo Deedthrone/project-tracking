@@ -5,7 +5,7 @@
     height: 100px;
     width: 100%;
     background: linear-gradient(120deg,#120b24, #231A47);
-    padding: 0px 0px;
+    padding: 30px 30px;
     transition: all 0.5s ease;
     color: white;
     box-sizing: border-box;
@@ -13,27 +13,59 @@
 
 .navbar ul li {
     display: inline-block;
+    margin-right: 400px;
 }
 
+/* CONTENT */
 .navbar  h1 {
     margin-top: 15px;
 }
 
-.navbar i {
+/* SEARCH */
+.search i {
     position: relative;
-    left: 1420px;
-    z-index: 1;
+    left: 40px;
+    top: 6px;
 }
 
-.navbar input {
-    position: relative;
+.search input {
     width: 230px;
-    height: 50px;
+    height: 40px;
     border-radius: 5px;
     border: none;
     color: white;
-    background-color: rgb(53, 53, 53);
+    background-color: #30235a;
     text-align: center;
-    left: 1380px;
-    bottom: 5px;
 }
+
+/* NOTIFICATION */
+.notif {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(120deg,#970f97, #231A47);
+    top: 7px;
+    border-radius: 10px;
+    color: white;
+}
+
+.notif button{
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+}
+
+
+.navbar button {
+    background: none;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar i {
+ position: relative;
+ top: 3px;
+}
+
