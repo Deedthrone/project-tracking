@@ -56,13 +56,13 @@
         <button>Goal</button>
       </a>
     </li>
-      <div class="navfoot">
+      <!-- <div class="navfoot"> -->
       <!-- LOGOUT -->
-      <a href="/">
+      <!-- <a href="/">
         <i class='bx bx-log-out bx-sm' ></i>
         <span class="tooltip"></span>
         <button>Logout</button>
       </a>
-      </div>
+      </div> -->
   </ul>
 </div>

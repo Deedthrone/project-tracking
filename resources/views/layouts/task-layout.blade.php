@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/partials/navbar.css">
     <link rel="stylesheet" href="css/partials/sidebar.css">
     <link rel="stylesheet" href="css/mytask.css">
-    <link href='https`://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
@@ -19,12 +19,12 @@
   <header>
   @include('partials.sidebar') 
   </header>
-  
-  <div class="main">
+
+  <div class="mytask">
     @yield('mytask')
 </div>
 
-  </div>
+
 
 
   </body>

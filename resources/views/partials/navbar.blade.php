@@ -1,9 +1,12 @@
 <div class="navbar">
     <ul>
-        <li><h1>Home</h1></li>
+        <li><h1>Dashboard</h1></li>
+    </ul>
+
+    <ul>
         <li>
-            <i class='bx bx-search-alt bx-sm'></i>
-            <input type="text" placeholder="Search..">
+        To Lead, Excel and be the best in all we do in order to achieve the ultimate client’s satisfaction.
         </li>
     </ul>
 </div>
+<hr>

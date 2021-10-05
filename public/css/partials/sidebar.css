@@ -30,7 +30,7 @@
   top: 0;
   height: 100%;
   width: 300px;
-  background: #000000;
+  background: #1F1D45;
   padding: 6px 10px;
   transition: all 0.5s ease;
   color: white;
@@ -56,7 +56,7 @@
   border-radius: 5px;
   border: none;
   color: white;
-  background-color: rgb(53, 53, 53);
+  background-color: #30235a;
   text-align: center;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .sidebar a button:hover {
-  background-color: rgb(31, 30, 30);
+  background-color: #30235a;
 }
 
 /* NAVFOOT */

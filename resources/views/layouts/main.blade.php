@@ -25,7 +25,7 @@
     @yield('home')
 </div>
 
-  </div>
+
 
 
   </body>
