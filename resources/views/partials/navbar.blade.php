@@ -1,6 +1,8 @@
 <div class="navbar">
-    <h1>Dashboard</h1>
         <ul>
+            <li>
+                <h1>Dashboard</h1>
+            </li>
 
             <li>
                 <div class="search">
@@ -18,10 +20,12 @@
             </li>
 
             <li>
-            <button>
-                Yosua Christopher 
-                <i class='bx bx-play bx-rotate-90'></i>
-                </button>
+                <div class="btn">
+                    <button>
+                        Yosua Christopher 
+                        <i class='bx bx-play bx-rotate-90'></i>
+                    </button>
+                </div>
             </li>
         </ul>
     </div>

@@ -50,16 +50,6 @@
   color: white;
 }
 
-.sidebar input{ 
-  width: 230px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  color: white;
-  background-color: #30235a;
-  text-align: center;
-}
-
 .sidebar a button {
   width: 230px;
   height: 50px;

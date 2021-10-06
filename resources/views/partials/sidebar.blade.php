@@ -5,12 +5,6 @@
     <i class='bx bx-menu-alt-right bx-sm' ></i>
   </div>
   <ul>
-    <li>
-        <!-- SEARCH -->
-        <i class='bx bx-search-alt bx-sm'></i>
-        <span class="tooltip"></span>
-        <input type="text" placeholder="Search..">
-    </li>
 
     <li>
       <!-- HOME -->

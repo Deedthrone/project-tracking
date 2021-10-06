@@ -65,3 +65,20 @@
     min-height: 100%;
     opacity: 70%;
 }
+
+/* PARTASK */
+.partask {
+    width: 440px;
+    background-color: black;
+    opacity: 60%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+.partask label {
+    color: wheat;
+    position: relative;
+    bottom: 3px;   
+}
