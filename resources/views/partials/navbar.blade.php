@@ -1,7 +1,7 @@
 <div class="navbar">
         <ul>
             <li>
-                <h1>Dashboard</h1>
+                <h1><?php echo "[Judul Page]";?></h1>
             </li>
 
             <li>

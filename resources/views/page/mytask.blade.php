@@ -7,22 +7,24 @@
 <?php
 
 $taskfield = 4;
+$partask = 2;
+$subtask = 2;
 
 ?>
 
 <!-- ISI -->
-<div class="home">
 @include('partials.navbar') 
     <div class="homecontent">
 
+        <!-- LOOPING SOURCETASK -->
         <?php for($i = 0 ; $i < $taskfield ; $i++) : ?>
             
-            <!-- SOURCE TASK -->
+   <!-- SOURCE TASK -->         
             <div class="taskfield">
                 <ul>
                     <!-- HEADER -->
                     <li>
-                        Do Today
+                        <?php echo "[Judul Task]"; ?>
                     </li>
 
                     <!-- + and ... -->
@@ -36,15 +38,46 @@ $taskfield = 4;
                 </ul>
 
                 <div class="alltask">
+
+                    <?php for($pt = 0 ; $pt < $partask ; $pt++) : ?>
                     <div class="partask">
                         <form action="" method="post">
-                        <input type="checkbox"> <label for=""><? echo "[Ini adalah judul tugas]"?></label>
-                        <span class="checkmark"></span>
+                            <input type="checkbox"> <label for=""><?php echo"[Ini adalah judul tugas]"; ?></label>
+                            <span class="checkmark"></span>
+                            
+                            <!-- CONTENT BAR -->
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus ipsam consequatur natus saepe delectus consequuntur commodi id libero hic repudiandae adipisci voluptatum doloribus, earum ab odit nesciunt labore modi?
+                            </p>
+                            
+                            <!-- SUBTASK -->
+
+                            <!-- LOOPING SUBTASK -->
+                            <?php for ($sb = 0 ; $sb < $subtask ; $sb++) : ?>
+                            <div class="subtask">
+                                <input type="checkbox"> <label for=""><?php echo "[Ini subtask]"; ?></label>
+                            </div>
+                            
+                            <?php endfor;?>
+
+                            <br>
+                            
+                            <!-- UPLOAD -->
+                            <div class="upload">
+                                <input type="file">
+                            </div>
+
+                            <!-- CLEAR -->
+                            <div class="clear"></div>
+                            
+                            <div class="date">
+                                <label for=""><?php echo date("l, d-M-Y"); ?></label>
+                            </div>
                     </div>
+                    <?php endfor ?>
                 </div>
-            </div>
+            </div> 
 
         <?php endfor; ?>
-</div>
 
 @endsection
