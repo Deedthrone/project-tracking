@@ -16,7 +16,7 @@
         <img src="/image/user/ex.png" alt="">
         <ul>
             <li><b><?php echo "Rudi Tabuti"; ?></b></li>
-            <li><?php echo "Gimana projectnya susah?"; ?></li>
+            <li><?php echo "Gimana projectnya?"; ?></li>
         </ul>
     </div>
     <?php endfor;?>
