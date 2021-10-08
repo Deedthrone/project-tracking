@@ -11,11 +11,15 @@
     
                         <!-- + and ... -->
                         <li>
-                            <i class='bx bx-plus bx-md bx-tada'></i>
+                            <a href="">
+                                <i class='bx bx-plus bx-md bx-tada'></i>
+                            </a>
                         </li>
     
                         <li>
-                            <i class='bx bx-dots-horizontal-rounded bx-tada'></i>
+                            <a href="">
+                                <i class='bx bx-dots-horizontal-rounded bx-tada'></i>
+                            </a>
                         </li>      
                     </ul>
     

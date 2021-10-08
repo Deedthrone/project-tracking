@@ -21,14 +21,14 @@
     margin-top: 10px;
     margin-left: 0px;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 21px;
     color: rgb(255, 255, 255);
     display: inline-block;
 }
 
 .taskfield ul li i{
     position: relative;
-    left: 200px;
+    left: 120px;
     top: 7px;
     color: white;
 }
@@ -36,7 +36,7 @@
 
 /* BODY */
 .taskfield {
-    width: 440px;
+    width: 386px;
     background: none;
     border-radius: 10px;
     float: left;
@@ -55,14 +55,14 @@
 
 .alltask {
     background: linear-gradient(120deg,#211644, #261a4e);
-    width: 440px;
+    width: 386px;
     min-height: 100%;
     opacity: 70%;
 }
 
 /* PARTASK */
 .partask {
-    width: 440px;
+    width: 386px;
     background-color: black;
     opacity: 60%;
     box-sizing: border-box;
@@ -83,7 +83,16 @@
 
 .date {
     position: relative;
-    left: 200px;
+    left: 190px;
+}
+
+/* BACKLOG */
+.backlog {
+    width: 700px;
+    height: 400px;
+    background: linear-gradient(120deg,#1EC7F1, #615bda);
+    border-radius: 5px;
+    float: left;
 }
 
 .clear {

@@ -5,8 +5,8 @@
 <!-- ISI -->
 
 <div class="home">
-@include('partials.navbar') 
     <div class="homecontent">
+    @include('partials.navigbar')
         <h1>test</h1>
     </div>
     

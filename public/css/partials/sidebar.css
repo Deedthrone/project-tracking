@@ -67,12 +67,13 @@
 /* NAVFOOT */
 .navfoot {
   position: fixed;
-  top: 940px;
+  top: 830px;
   left: 0px;
   width: 300px;
   height: 100px;
   background-color: rgb(15, 15, 15);
   padding-top: 20px;
+  opacity: 60%;
 }
 
 .navfoot i {

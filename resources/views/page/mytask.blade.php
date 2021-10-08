@@ -13,11 +13,14 @@ $subtask = 2;
 ?>
 
 <!-- ISI -->
-@include('partials.navbar') 
-    <div class="homecontent">
 
+    <div class="homecontent">
+    @include('partials.navigbar')
+
+        @include('partials.backlog')
+        
         @include('partials.source-task') 
- 
+        
     </div>
 
 @endsection

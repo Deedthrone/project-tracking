@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/image/logo/deedthrone.jpg">
-    <link rel="stylesheet" href="css/partials/navbar.css">
     <link rel="stylesheet" href="css/partials/sidebar.css">
+    <link rel="stylesheet" href="css/partials/navigationbar.css">
     <link rel="stylesheet" href="css/inbox.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- Bootstrap CSS -->
