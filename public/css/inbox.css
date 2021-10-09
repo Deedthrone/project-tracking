@@ -13,54 +13,16 @@
     left: 300px ;
     width: 350px;
     height: 100%;
-    background-color: #1F1D45;
+    background-color: #000000;
     padding: 10px;
     opacity: 90%pin;
 }
 
-.chatfield input {
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    background-color: #30235a;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.pagechat {
-    width: 100%;
-    height: 80px;
-    border-radius: 5px;
-    padding: 10px;
-    box-sizing: border-box;
-    overflow: hidden;
-    transition: 0.2s;
-}
-
-.pagechat:hover {
-    background-color: #30235a;
-}
-
-.pagechat img {
-    width: 60px;
-    border-radius: 50%;
-}
-
-.pagechat ul li {
-    position: relative;
-    bottom: 60px;
-    left: 60px;
-    margin-bottom: 7px;
-    list-style: none;
-    color: #566084;
-}
 
 .navchat {
     width: 100%;
-    height: 500px;
+    height: 150px;
     position: fixed;
-    left: 600px;
-    background-color: black ;
+    left: 650px;
+    background-color: rgb(255, 255, 255) ;
 }

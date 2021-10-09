@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="/image/logo/deedthrone.jpg">
     <link rel="stylesheet" href="css/partials/sidebar.css">
     <link rel="stylesheet" href="css/partials/navigationbar.css">
+    <link rel="stylesheet" href="css/partials/backlog.css">
     <link rel="stylesheet" href="css/mytask.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- Bootstrap CSS -->

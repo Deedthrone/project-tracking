@@ -10,17 +10,17 @@
                         </li>
     
                         <!-- + and ... -->
-                        <li>
-                            <a href="">
-                                <i class='bx bx-plus bx-md bx-tada'></i>
-                            </a>
-                        </li>
+                            <li>
+                                <a href="">
+                                    <i class='bx bx-plus bx-md bx-tada'></i>
+                                </a>
+                            </li>
     
-                        <li>
-                            <a href="">
-                                <i class='bx bx-dots-horizontal-rounded bx-tada'></i>
-                            </a>
-                        </li>      
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-dots-horizontal-rounded bx-tada'></i>
+                                    </a>
+                                </li>      
                     </ul>
     
                     <div class="alltask">
@@ -28,9 +28,12 @@
                         <?php for($pt = 0 ; $pt < $partask ; $pt++) : ?>
                         <div class="partask">
                             <form action="" method="post">
+                                <!-- button -->
+                                <div class="priority"></div>                               
+
                                 <input type="checkbox"> <label for=""><?php echo"[Ini adalah judul tugas]"; ?></label>
                                 <span class="checkmark"></span>
-                                
+                                <div class="clear"></div>
                                 <!-- CONTENT BAR -->
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus ipsam consequatur natus saepe delectus consequuntur commodi id libero hic repudiandae adipisci voluptatum doloribus, earum ab odit nesciunt labore modi?

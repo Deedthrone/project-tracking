@@ -87,7 +87,7 @@
   text-decoration: none;
 }
 
-.navfoot a button {
+/* .navfoot a button {
   width: 230px;
   height: 50px;
   background: none;
@@ -96,7 +96,7 @@
   border: none;
   outline: none;
   text-align: center;
-}
+} */
 
 .navfoot a button:hover {
   background-color: rgb(31, 30, 30);

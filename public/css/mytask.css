@@ -82,19 +82,25 @@
 }
 
 .date {
-    position: relative;
-    left: 190px;
+    float: right;
 }
 
-/* BACKLOG */
-.backlog {
-    width: 700px;
-    height: 400px;
-    background: linear-gradient(120deg,#1EC7F1, #615bda);
-    border-radius: 5px;
-    float: left;
+.priority {
+    width: 18px;
+    height: 18px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 50%;
+    float: right;
 }
 
+/* CLEAR */
 .clear {
     clear: both;
+}
+
+/* ELSE */
+.navbar {
+    left: -15px;
+    top: -15px;
 }

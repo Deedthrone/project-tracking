@@ -1,0 +1,19 @@
+/* BACKLOG */
+
+.chart {
+    width: 700px;
+    height: 400px;
+    background: linear-gradient(120deg,#bf73e0, #714186);
+    border-radius: 5px;
+    float: left;
+    margin-left: 30px;
+}
+
+.backlog {
+    width: 700px;
+    height: 400px;
+    background: linear-gradient(120deg,#1EC7F1, #615bda);
+    border-radius: 5px;
+    float: left;
+}
+

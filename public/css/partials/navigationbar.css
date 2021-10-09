@@ -1,7 +1,7 @@
 .navbar {
     position: fixed;
-    left: -15px;
-    top: -15px;
+    left: 0px;
+    top: 0px;
     height: 100px;
     width: 100%;
     padding: 30px 30px;
@@ -42,6 +42,7 @@
     color: white;
     height: 30px;
     border-radius: 7px;
+    transition: 0.3s;
 }
 
 .navbar ul li input {
