@@ -23,14 +23,14 @@
             <div class="field">
                 <i class='bx bxs-user bx-sm'></i>
                     <span class="tooltip"></span>
-                <input type="text" placeholder="Username" require>
+                <input type="text" placeholder="Username" name="username" require>
             <hr>
             </div>
         <!-- PASSWORD -->
             <div class="field">
                 <i class='bx bxs-lock-alt bx-sm' ></i>
                     <span class="tooltip"></span>
-                <input type="password" placeholder="Password" require>
+                <input type="password" placeholder="Password" name="password" require>
             <hr>
 
         <!-- FORGOT YOUR PASSWORD -->

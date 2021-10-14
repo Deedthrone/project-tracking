@@ -6,7 +6,7 @@
 <!-- ISI -->
 
 <div class="chatfield">
-
+    asdas
 </div>
 
 @endsection

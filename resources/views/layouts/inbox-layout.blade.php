@@ -22,6 +22,8 @@
   
   <div class="inbox">
     @yield('inbox')
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dignissimos, dolores repellendus possimus, quam ab, nisi vero tenetur quas obcaecati molestias debitis aliquid vitae rerum doloremque. Ad porro quae modi?</p>
 </div>
 
 
