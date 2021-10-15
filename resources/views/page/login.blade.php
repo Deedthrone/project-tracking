@@ -17,7 +17,7 @@
     <div class="container">
         <h1>Login</h1>
         <hr>
-        <form action="" method="post">
+        <form action="home" method="post">
 
         <!-- USERNAME -->
             <div class="field">

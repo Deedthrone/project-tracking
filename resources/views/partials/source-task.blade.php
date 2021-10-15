@@ -1,3 +1,13 @@
+<!-- Variable -->
+
+<?php
+
+$taskfield = 4;
+$partask = 2;
+$subtask = 2;
+
+?>
+
 <!-- LOOPING SOURCETASK -->
 <?php for($i = 0 ; $i < $taskfield ; $i++) : ?>
             
