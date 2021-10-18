@@ -16,7 +16,9 @@
         <div class="submsg">
             <button>
                 <i class='bx bxs-user-circle bx-md' ></i>
-                <label for=""><?= "nama"?></label>
+                <h9><?= "nama"?></h9>
+<p><?= "libur tela tiba libur telah tiba hore hore" ?> </p>                
+                <label for=""><?= $today = date("H:i"); ?></label>
             </button>
         </div>
     <?php endfor; ?>
