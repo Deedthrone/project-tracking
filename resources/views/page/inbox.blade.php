@@ -4,24 +4,20 @@
 
 @section('inbox')
 <!-- ISI -->
+@foreach ($posts as $post)
 
-<div class="boxinbox">
-    <form action="" method="post">
-        <i class='bx bx-search-alt-2 bx-sm  ' ></i>
-        <input type="pencarian" name="" id="">
-    </form>
-</div>
-<div class="allbox">
-    <?php for ($i = 1 ; $i < 3 ; $i++ ) : ?>
-        <div class="submsg">
-            <button>
-                <i class='bx bxs-user-circle bx-md' ></i>
-                <h9><?= "nama"?></h9>
-<p><?= "libur tela tiba libur telah tiba hore hore" ?> </p>                
-                <label for=""><?= $today = date("H:i"); ?></label>
-            </button>
-        </div>
-    <?php endfor; ?>
-</div>
+<article class="mb-5" border-bottom pb-5>
+
+<h2><a href="/posts/{{ $post->slug }}" class="text-decoration-none">{{ $post->title }}</a></h2>
+
+<p>By. <a href="" class="text-decoration-none">{{ $post->user->name }}</a>   <a href="/categories/{{ $post->category->name }}" class="text-decoration-none">{{  $post->category->name  }}</a></p>
+
+
+<p>{{ $post->excerpt }}</p>
+
+<a href="/posts/{{ $post->slug }}" class="d-block mt-3">Read more..</a>
+</article>
+@endforeach
+
 
 @endsection
