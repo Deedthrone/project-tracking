@@ -26,7 +26,7 @@
 
     <li>
       <!-- MESSAGE -->
-      <a href="inbox">
+      <a href="inboxs">
         <i class='bx bx-message-dots bx-sm' ></i>
         <span class="tooltip"></span>
         <button>Message</button>

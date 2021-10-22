@@ -9,15 +9,19 @@ use App\Models\Inbox;
 class InboxController extends Controller
 {
     //
-    public function index() 
+    public function index()
     {
-        return view('inbox', {
-            "title" => "inbox"
-        });
+        return view('inboxs', [
+            "title" => "inbox",
+            "inboxs" => Inbox::all()
+        ]);
     }
 
-    // public function show()
-    // {
-
-    // }
+    public function show(Post $post)
+    {
+        return view('inbox', [
+            "title" => "Single Post",
+            "inbox" => $inbox
+        ]);
+    }
 }

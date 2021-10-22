@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\InboxController;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,18 +52,8 @@ Route::get('/task', function () {
 });
 
 // Inbox --------------------------------------------------------------------
-Route::get('/inbox', function () {
-    return view('page/inbox', [
-        "title" => "inbox"
-    ]);
-});
 
-Route::get('/inbox', [PostController::class, 'index']);
-
-// Halaman Single Post
-Route::get('/posts/{post:slug}', [PostController::class, 'show']);
-
-
+Route::get('/inboxs', [InboxController::class, 'index']);
 
 // Chart --------------------------------------------------------------------
 
