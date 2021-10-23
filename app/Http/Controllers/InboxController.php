@@ -11,7 +11,7 @@ class InboxController extends Controller
     //
     public function index()
     {
-        return view('inboxs', [
+        return view('page/inboxs', [
             "title" => "inbox",
             "inboxs" => Inbox::all()
         ]);
