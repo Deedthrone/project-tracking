@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\InboxController;
+use App\Http\Controllers\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,11 +46,14 @@ Route::get('/home', function () {
 });
 
 // MyTask --------------------------------------------------------------------
-Route::get('/task', function () {
-    return view('page/mytask', [
-        "title" => "task"
-    ]);
-});
+// Route::get('/task', function () {
+//     return view('page/mytask', [
+//         "title" => "task"
+//     ]);
+// });
+
+Route::get('/task', [TaskController::class, 'sourcetask']);
+
 
 // Inbox --------------------------------------------------------------------
 

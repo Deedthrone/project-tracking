@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Inbox;
+use App\Models\Task;
 
 class DatabaseSeeder extends Seeder
 {
@@ -38,10 +39,39 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // Task::create([
-        //     'title' => 'Tugas-1',
+        //     'judultask' => 'ini adalah tugas',
         //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolore commodi placeat, sed fugit et ex doloribus deleniti aliquam autem praesentium incidunt odit, porro repellat quis rerum recusandae officiis rem. Veritatis minus nam, ad quos in cumque aspernatur blanditiis molestias ducimus explicabo ullam voluptate sequi assumenda eligendi quod asperiores! Nihil fugit cum repellat, aut at hic deserunt aliquid sint autem!',
+        //     'priority' => 'red',
         //     'subtask' => 'menggambar'
+ 
+            
         // ]);
+
+        Task::create([
+            'category' => 'Today',
+            'titletask' => 'Tugas 1',
+            'body' => 'Berisap siap untuk menyelesaikan project pada laravel ini pada tanggal 28',
+            'subtask' => 'menggambar',
+            'priority' => 'red'
+        ]);
+
+        Task::create([
+            'category' => 'This Week',
+            'titletask' => 'Tugas 2',
+            'body' => 'Tugas kuliah merangkum pak Tutut',
+            'subtask' => 'mewarnai',
+            'priority' => 'yellow'
+        ]);
+
+        Task::create([
+            'category' => 'This Month',
+            'titletask' => 'Tugas 3',
+            'body' => 'Pembuatan document MPDsI pada kelas pak Romeo',
+            'subtask' => 'menulis',
+            'priority' => 'green'
+        ]);
+
+        
 
         // Inbox::create([
         //     'slug' => 'chat-3',

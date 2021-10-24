@@ -7,7 +7,9 @@ $partask = 2;
 $subtask = 2;
 
 ?>
+@foreach ($tasks as $task)
 
+@endforeach
 <!-- LOOPING SOURCETASK -->
 <?php for($i = 0 ; $i < $taskfield ; $i++) : ?>
             
@@ -16,7 +18,7 @@ $subtask = 2;
                     <ul>
                         <!-- HEADER -->
                         <li>
-                            <?php echo "[Judul Task]"; ?>
+                            {{ $task->titletask }}
                         </li>
     
                         <!-- + and ... -->
@@ -41,12 +43,12 @@ $subtask = 2;
                                 <!-- button -->
                                 <div class="priority"></div>                               
 
-                                <input type="checkbox"> <label for=""><?php echo"[Ini adalah judul tugas]"; ?></label>
+                                <input type="checkbox"> <label for="">{{ $task->titletask }}</label>
                                 <span class="checkmark"></span>
                                 <div class="clear"></div>
                                 <!-- CONTENT BAR -->
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus ipsam consequatur natus saepe delectus consequuntur commodi id libero hic repudiandae adipisci voluptatum doloribus, earum ab odit nesciunt labore modi?
+                                    {{ $task->body }}
                                 </p>
                                 
                                 <!-- SUBTASK -->
@@ -54,7 +56,7 @@ $subtask = 2;
                                 <!-- LOOPING SUBTASK -->
                                 <?php for ($sb = 0 ; $sb < $subtask ; $sb++) : ?>
                                 <div class="subtask">
-                                    <input type="checkbox"> <label for=""><?php echo "[Ini subtask]"; ?></label>
+                                    <input type="checkbox"> <label for="">{{ $task->subtask }}</label>
                                 </div>
                                 
                                 <?php endfor;?>

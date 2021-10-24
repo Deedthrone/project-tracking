@@ -1,5 +1,5 @@
 <div class="navbar">
-        <h2>Dashboard</h2>
+    <h2> Page {{ $title }}</h2>
         <ul>
             <li><input type="text" placeholder="Search.."></li>
             <li><a href=""><button><i class='bx bxs-bell' ></i></button></a></li>
