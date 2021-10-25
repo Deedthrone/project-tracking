@@ -15,6 +15,10 @@ class CreateBacklogsTable extends Migration
     {
         Schema::create('backlogs', function (Blueprint $table) {
             $table->id();
+            $table->string('title_log');
+            $table->text('subject_log');
+            $table->text('body_log');
+            $table->text('file_log');
             $table->timestamps();
         });
     }
