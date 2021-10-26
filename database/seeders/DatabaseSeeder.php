@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Yosua Christopher',
             'slug' => 'chat-1',
             'excerpt' => 'Permisi mas tugas 1 buat aplikasi Project Tracking apakah sudah selesai?',
-            'message' => 'Permisi mas tugas 1 buat aplikasi Project Tracking apakah sudah selesai? semisalkan sudah selesai segera kabari saya ya, saya akan buat desainnya'
+            'message' => 'Permisi mas tugas 1 buat aplikasi Project Tracking apakah sudah selesai?'
         ]);
 
         Inbox::create([
