@@ -17,7 +17,7 @@ class InboxController extends Controller
         ]);
     }
 
-    public function show(Post $post)
+    public function show(Inbox $inbox)
     {
         return view('inbox', [
             "title" => "Single Post",

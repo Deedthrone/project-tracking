@@ -19,7 +19,7 @@
   <header>
   @include('partials.sidebar') 
   </header>
-  
+
   <div class="inbox">
     @yield('inbox')
 </div>

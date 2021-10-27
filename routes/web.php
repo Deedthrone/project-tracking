@@ -59,6 +59,12 @@ Route::get('/task', [TaskController::class, 'sourcetask']);
 
 Route::get('/inboxs', [InboxController::class, 'index']);
 
+Route::get('/inboxs/{inbox:slug}', [PostController::class, 'show']);
+
+
+Route::get('/posts/{post:slug}', [PostController::class, 'show']);
+
+
 // Chart --------------------------------------------------------------------
 
 Route::get('/chart', function () {
