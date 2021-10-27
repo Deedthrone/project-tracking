@@ -1,9 +1,7 @@
-@extends('layouts.main')
-
-@extends('layouts.inbox-layout')
+@extends('layouts.inbox-slug')
 
 @section('inbox')
 <!-- ISI -->
-
+@include('subpage.message')
 
 @endsection

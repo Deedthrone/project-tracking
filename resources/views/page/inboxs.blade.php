@@ -19,41 +19,41 @@
                     <table>
                         @foreach ($inboxs as $inbox)
                         <tr>
-                                <td>
-                                    <div class="chatbox">
-                                        <a href="">
-                                            <div class="profile">
-                                                <p>P</p>
-                                            </div>
+                            <td>
+                                <div class="chatbox">
+                                    <a href="/inboxs/{{ $inbox->slug }}">
+                                        <div class="profile">
+                                            <p>P</p>
+                                        </div>
 
-                                            <div class="biodata">
-                                                <ul>
-                                                    <li>{{ $inbox->name }}</li>
-                                                    <li><p>{{ $inbox->excerpt }}</p></li>
-                                                </ul>
-                                                <h1>{{ date("M d, Y"); }}</h1>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </td>
+                                        <div class="biodata">
+                                            <ul>
+                                                <li>{{ $inbox->name }}</li>
+                                                <li><p>{{ $inbox->excerpt }}</p></li>
+                                            </ul>
+                                            <h1>{{ date("M d, Y"); }}</h1>
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
                         </tr>
                         @endforeach
                         <div class="chatdetail">
                             <div class="navchat">
                                 <h2>{{ $inbox->subject }}</h2   >    
                             </div>
-
-                            <div class="chat">
-                                
-                                <div class="profilechat">
-                                    <p>P</p>
-                                </div>
-                                <label for="">{{ $inbox->name }}</label>
-                                <h2>{{ date("M d, Y"); }}</h2>
-                                <h4>To : </h4>
-
-
-                            </div>
+            
+                                <div class="chat">
+                                            
+                                     <div class="profilechat">
+                                        <p>P</p>
+                                    </div>
+                                            <label for="">{{ $inbox->name }}</label>
+                                            <h2>{{ date("M d, Y"); }}</h2>
+                                            <h4>To : {{'user@gmail.com'}} </h4>
+                                        </div>
+                                    </div>
+                                </table>
                         </div>
                     </table>
             </div>
