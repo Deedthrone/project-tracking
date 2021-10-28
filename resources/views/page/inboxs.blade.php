@@ -11,7 +11,20 @@
 
 <div class="boxchat">
     <div class="headbox">
-
+        <div class="chatfeature">
+        </div>
+        <div class="chatfeature">
+            <i class='bx bxs-inbox bx-md'></i>
+        </div>
+        <div class="chatfeature">
+            <i class='bx bx-mail-send bx-md'></i>
+        </div>
+        <div class="chatfeature">
+            
+        </div>
+        <div class="chatfeature">
+            
+        </div>
 
 
     </div>
@@ -40,23 +53,11 @@
                         @endforeach
                         <div class="chatdetail">
                             <div class="navchat">
-                                <h2>{{ $inbox->subject }}</h2   >    
+                                <h2></h2>    
                             </div>
-            
-                                <div class="chat">
-                                            
-                                     <div class="profilechat">
-                                        <p>P</p>
-                                    </div>
-                                            <label for="">{{ $inbox->name }}</label>
-                                            <h2>{{ date("M d, Y"); }}</h2>
-                                            <h4>To : {{'user@gmail.com'}} </h4>
-                                        </div>
-                                    </div>
-                                </table>
                         </div>
-                    </table>
-            </div>
+                </table>
+        </div>
 </div>
 
 

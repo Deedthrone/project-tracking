@@ -8,21 +8,25 @@
 
 
     </div>
-            <div class="chatdetail">
-                <div class="navchat">
-                    <h2>{{ $inbox->subject }}</h2   >    
-                </div>
+            <div class="chatlist">
 
-                    <div class="chat">
-                                
-                         <div class="profilechat">
+                <div class="chatdetail2">
+                    <div class="navchat2">
+                            <h2>{{ $inbox->subject }}</h2>    
+                    </div>
+                        <div class="chat2">          
+                            <div class="profilechat2">
                             <p>P</p>
-                        </div>
-                                <label for="">{{ $inbox->name }}</label>
-                                <h2>{{ date("M d, Y"); }}</h2>
-                                <h4>To : {{'user@gmail.com'}} </h4>
                             </div>
+                                <label for="">{{ 'user@gmail.com' }}</label>
+                                <h2>{{ date("M d, Y"); }}</h2>
+                                <h4>To : {{ $inbox->name }} </h4>
                         </div>
-                    </table>
+                        <div class="chatbody">
+                            <h6>Hey {{ $inbox->name }}</h6>
+                            <p>{{ $inbox->message }}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-</div>
+    </div>
