@@ -10,24 +10,29 @@
 </div>
 
 <div class="boxchat">
-    <div class="headbox">
-        <div class="chatfeature">
+    <div class="boxchat">
+        <div class="headbox">
+            <div class="chatfeature">
+            </div>
+            <div class="chatfeature">
+                <a href="">
+                    <i class='bx bxs-inbox bx-md'></i>
+                </a>
+            </div>
+            <div class="chatfeature">
+                <a href="">
+                    <i class='bx bx-mail-send bx-md'></i>
+                </a>
+            </div>
+            <div class="chatfeature">
+                
+            </div>
+            <div class="chatfeature">
+                
+            </div>
+    
+    
         </div>
-        <div class="chatfeature">
-            <i class='bx bxs-inbox bx-md'></i>
-        </div>
-        <div class="chatfeature">
-            <i class='bx bx-mail-send bx-md'></i>
-        </div>
-        <div class="chatfeature">
-            
-        </div>
-        <div class="chatfeature">
-            
-        </div>
-
-
-    </div>
             <div class="chatlist">
                     <table>
                         @foreach ($inboxs as $inbox)
@@ -53,7 +58,7 @@
                         @endforeach
                         <div class="chatdetail">
                             <div class="navchat">
-                                <h2></h2>    
+                                <p>You can start chat here</p>    
                             </div>
                         </div>
                 </table>

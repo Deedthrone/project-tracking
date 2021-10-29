@@ -24,4 +24,12 @@ class InboxController extends Controller
             "inbox" => $inbox
         ]);
     }
+
+    public function type(Inbox $outbox)
+    {
+        return view('/page/outboxs', [
+            "title" => "Outbox",
+            "inbox" => $outbox
+        ]);
+    }
 }
