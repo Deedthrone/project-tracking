@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Yosua Christopher',
             'subject' => 'Tugas 1',
             'slug' => 'chat-1',
+            'type' => 'inbox',
             'excerpt' => 'Permisi mas tugas 1 buat aplikasi Project Tracking apakah sudah selesai?',
             'message' => 'Permisi mas tugas 1 buat aplikasi Project Tracking apakah sudah selesai?'
         ]);
@@ -29,6 +30,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Mutia Habeahan',
             'subject' => 'Tugas 2',
             'slug' => 'chat-2',
+            'type' => 'inbox',
             'excerpt' => 'Tolong segera selesaikan desain dari project tracking',
             'message' => 'Tolong segera selesaikan desain dari project tracking dikarenakan sudah hampir mencapai deadline!'
         ]);
@@ -36,6 +38,7 @@ class DatabaseSeeder extends Seeder
         Inbox::create([
         'slug' => 'chat-3',
             'name' => 'Muchammad Muchlis',
+            'type' => 'outbox',
             'subject' => 'Tugas 3',
             'excerpt' => 'Permisi pak, bolehkah saya bantu dalam meetingnya',
             'message' => 'Permisi pak, bolehkah saya bantu dalam meetingnya'

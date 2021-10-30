@@ -58,12 +58,11 @@
                         @endforeach
                         <div class="chatdetail">
                             <div class="navchat">
-                                <p>You can start chat here</p>    
+                                <p>You can start chat here feel free to chat anything</p>    
                             </div>
                         </div>
                 </table>
         </div>
 </div>
-
 
 @endsection

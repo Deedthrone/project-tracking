@@ -25,11 +25,11 @@ class InboxController extends Controller
         ]);
     }
 
-    public function type(Inbox $outbox)
+    public function outbox(Inbox $outbox)
     {
         return view('/page/outboxs', [
             "title" => "Outbox",
-            "inbox" => $outbox
+            "inboxs" => Inbox::all()
         ]);
     }
 }
