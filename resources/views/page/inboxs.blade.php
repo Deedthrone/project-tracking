@@ -94,7 +94,7 @@
                         @endforeach
                         <div class="chatdetail">
                             <div class="navchat">
-                                <p>You can start chat here feel free to chat anything</p>    
+                                <p>Test => {{ $inbox->name }}</p>    
                             </div>
                         </div>
                 </table>

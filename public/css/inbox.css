@@ -53,6 +53,7 @@
     background-color: #171926;
 }
 
+
 /* Headbox */
 
 .headbox {
@@ -75,7 +76,7 @@
     position: fixed;
     background-color: #11121D;
     box-sizing: border-box;
-    overflow: auto;
+    overflow: scroll;
 }
 
 .chatbox {

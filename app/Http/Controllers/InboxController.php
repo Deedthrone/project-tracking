@@ -8,7 +8,7 @@ use App\Models\Inbox;
 
 class InboxController extends Controller
 {
-    //
+    // INBOXS
     public function index()
     {
         return view('page/inboxs', [
@@ -25,11 +25,18 @@ class InboxController extends Controller
         ]);
     }
 
-    public function outbox(type $type)
+    // INBOX
+
+    public function subindex()
     {
-        return view('page/outbox', [
-            "title" => "Single Post",
-            "inbox" => $inbox
+        return view('page/inbox', [
+            "title" => "inbox",
+            "subinboxs" => Inbox::all()
         ]);
     }
+
+    // OUTBOXS
+
+
+    // OUTBOX
 }
