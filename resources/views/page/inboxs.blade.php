@@ -43,19 +43,21 @@
                             <td>
                                 <div class="chatbox">
                                     <a href="/inboxs/{{ $inbox->slug }}">
-                                        <div class="profile">
-                                            <p>P</p>
-                                        </div>
-
-                                        <div class="biodata">
-                                            <div class="biocontain">
-                                                <ul>
-                                                    <li>{{ $inbox->name }}</li>
-                                                    <li><p>{{ $inbox->excerpt }}</p></li>
-                                                </ul>
+                                        <button>
+                                            <div class="profile">
+                                                <p>P</p>
                                             </div>
-                                            <h1>{{ date("M d, Y"); }}</h1>
-                                        </div>
+
+                                            <div class="biodata">
+                                                <div class="biocontain">
+                                                    <ul>
+                                                        <li>{{ $inbox->name }}</li>
+                                                        <li><p>{{ $inbox->message }}</p></li>
+                                                    </ul>
+                                                </div>
+                                                <h1>{{ date("M d, Y"); }}</h1>
+                                            </div>
+                                        </button>
                                     </a>
                                 </div>
                             </td>
@@ -67,17 +69,21 @@
                             <td>
                                 <div class="chatbox2">
                                     <a href="/inboxs/{{ $inbox->slug }}">
-                                        <div class="profile2">
-                                            <p>P</p>
-                                        </div>
+                                        <button>
+                                            <div class="profile2">
+                                                <p>P</p>
+                                            </div>
 
-                                        <div class="biodata2">
-                                            <ul>
-                                                <li>{{ $inbox->name }}</li>
-                                                <li><p>{{ $inbox->excerpt }}</p></li>
-                                            </ul>
-                                            <h1>{{ date("M d, Y"); }}</h1>
-                                        </div>
+                                            <div class="biodata2">
+                                                <div class="biocontain2">
+                                                    <ul>
+                                                        <li>{{ $inbox->name }}</li>
+                                                        <li><p>{{ $inbox->message }}</p></li>
+                                                    </ul>
+                                                </div>
+                                                <h1>{{ date("M d, Y"); }}</h1>
+                                            </div>
+                                        </button>
                                     </a>
                                 </div>
                             </td>

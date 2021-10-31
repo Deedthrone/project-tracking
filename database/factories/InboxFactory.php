@@ -26,8 +26,7 @@ class InboxFactory extends Factory
             'slug' => $this->faker->sentence(mt_rand(1,2)),
             'name' => $this->faker->name(),
             'subject' => $this->faker->sentence(mt_rand(1,2)),
-            'excerpt' => $this->faker->sentence(mt_rand(1,20)),
-            'message' => $this->faker->paragraph(mt_rand(5,40)),
+            'message' => $this->faker->paragraph(mt_rand(2,11)),
         ];
     }
 }

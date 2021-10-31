@@ -106,20 +106,22 @@
 }
 
 .biocontain {
-    background-color: green;
     height: 40px;
     width: 540px;
+    position: relative;
+    bottom: 39px;
+    left: 22px;
+    overflow: hidden;
+    box-sizing: border-box;
+    pad: 1px 1px;
 }
 
 .biodata ul li {
     list-style: none;
-    position: relative;
-    bottom: 40px;
-    left: 20px;
     font-size: 12px;
     color: #E2EFFC;
     font-weight: bold;
-    overflow: hidden;
+    text-align: justify;
 }
 
 .chatbox a { 
@@ -132,22 +134,45 @@
     text-decoration: none;
     color: #E2EFFC;
     position: relative;
-    left: 600px;
-    bottom: 95px;
+    left: 290px;
+    bottom: 68px;
 }
 
-.chatbox a:hover { 
+.chatbox button {
+    position: relative;
+    left: -7px;
+    bottom: 11px;
+    width: 697px;
+    height: 63px;
+    background: none;
+    border: 1px;
+    box-sizing: border-box;
+    padding: 11px 8px 8px 8px;
+}
+
+.chatbox button:hover { 
     text-decoration: none;
-    background-color: red;
+    border: solid 2px #E53265;
 }
 
 /* CHAT 2 */
+
+.chatlist2 { 
+    border: solid 1px #4e5269;
+    height: 100%;
+    width: 700px;
+    top: 129px;
+    position: fixed;
+    background-color: #11121D;
+    box-sizing: border-box;
+    overflow: auto;
+}
 
 .chatbox2 {
     width: 697px;
     height: 60px;
     background-color: #11121D;
-    border: solid #25283A;
+    border: solid #191A27;
     border-top: 1px;
     border-right: 1px;
     border-left: 1px;
@@ -161,7 +186,7 @@
     height: 40px;
     border-radius: 4px;
     overflow: hidden;
-    color: #495A71;
+    color: #565968;
 }
 
 .profile2 p {
@@ -170,16 +195,23 @@
     font-weight: bold;
 }
 
+.biocontain2 {
+    height: 40px;
+    width: 540px;
+    position: relative;
+    bottom: 39px;
+    left: 22px;
+    overflow: hidden;
+    box-sizing: border-box;
+    pad: 1px 1px;
+}
+
 .biodata2 ul li {
     list-style: none;
-    position: relative;
-    bottom: 40px;
-    left: 20px;
     font-size: 12px;
-    color: #495A71;
+    color: #565968;
     font-weight: bold;
-    width: 540px;
-    overflow: hidden;
+    text-align: justify;
 }
 
 .chatbox2 a { 
@@ -190,15 +222,27 @@
     text-decoration: none;
     font-size: 12px;
     text-decoration: none;
-    color: #495A71;
+    color: #565968;
     position: relative;
-    left: 600px;
-    bottom: 95px;
+    left: 290px;
+    bottom: 68px;
 }
 
-.chatbox2 a:hover { 
+.chatbox2 button {
+    position: relative;
+    left: -7px;
+    bottom: 8px;
+    width: 697px;
+    height: 63px;
+    background: none;
+    border: 1px;
+    box-sizing: border-box;
+    padding: 8px 8px 8px 8px;
+}
+
+.chatbox2 button:hover { 
     text-decoration: none;
-    background-color: red;
+    border: solid 2px #E53265;
 }
 
 /* CHAT FEATURE */
