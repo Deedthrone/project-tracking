@@ -1,7 +1,3 @@
-@extends('layouts.inbox-slug')
-
-@section('inbox')
-<!-- ISI -->
 @extends('layouts.main')
 
 @extends('layouts.inbox-layout')
@@ -14,53 +10,59 @@
 </div>
 
 <div class="boxchat">
-    <div class="headbox">
-        <div class="chatfeature">
+    <div class="boxchat">
+        <div class="headbox">
+            <div class="chatfeature">
+            </div>
+            <div class="chatfeature">
+                <a href="">
+                    <i class='bx bxs-inbox bx-md'></i>
+                </a>
+            </div>
+            <div class="chatfeature">
+                <a href="">
+                    <i class='bx bx-mail-send bx-md'></i>
+                </a>
+            </div>
+            <div class="chatfeature">
+                
+            </div>
+            <div class="chatfeature">
+                
+            </div>
+    
+    
         </div>
-        <div class="chatfeature">
-            <a href="">
-                <i class='bx bxs-inbox bx-md'></i>
-            </a>
-        </div>
-        <div class="chatfeature">
-            <a href="">
-                <i class='bx bx-mail-send bx-md'></i>
-            </a>
-        </div>
-        <div class="chatfeature">
-            
-        </div>
-        <div class="chatfeature">
-            
-        </div>
-
-
-    </div>
             <div class="chatlist">
                     <table>
+                        @foreach ($inboxs as $inbox)
+                        <tr>
+                            <td>
+                                <div class="chatbox">
+                                    <a href="/inboxs/{{ $inbox->slug }}">
+                                        <div class="profile">
+                                            <p>P</p>
+                                        </div>
+
+                                        <div class="biodata">
+                                            <ul>
+                                                <li>{{ $inbox->name }}</li>
+                                                <li><p>{{ $inbox->excerpt }}</p></li>
+                                            </ul>
+                                            <h1>{{ date("M d, Y"); }}</h1>
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        @endforeach
                         <div class="chatdetail">
                             <div class="navchat">
-                                <h2></h2>    
+                                <p>You can start chat here feel free to chat anything</p>    
                             </div>
                         </div>
                 </table>
         </div>
 </div>
 
-
 @endsection
-
-
-@endsection
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <p>asdsa</p>
-</body>
-</html>

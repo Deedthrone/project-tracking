@@ -36,6 +36,9 @@
             <div class="chatlist">
                     <table>
                         @foreach ($inboxs as $inbox)
+
+                        @if ( $inbox->type == 1 )
+
                         <tr>
                             <td>
                                 <div class="chatbox">
@@ -45,6 +48,30 @@
                                         </div>
 
                                         <div class="biodata">
+                                            <div class="biocontain">
+                                                <ul>
+                                                    <li>{{ $inbox->name }}</li>
+                                                    <li><p>{{ $inbox->excerpt }}</p></li>
+                                                </ul>
+                                            </div>
+                                            <h1>{{ date("M d, Y"); }}</h1>
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        @else
+
+                        <tr>
+                            <td>
+                                <div class="chatbox2">
+                                    <a href="/inboxs/{{ $inbox->slug }}">
+                                        <div class="profile2">
+                                            <p>P</p>
+                                        </div>
+
+                                        <div class="biodata2">
                                             <ul>
                                                 <li>{{ $inbox->name }}</li>
                                                 <li><p>{{ $inbox->excerpt }}</p></li>
@@ -55,6 +82,9 @@
                                 </div>
                             </td>
                         </tr>
+
+                        @endif
+
                         @endforeach
                         <div class="chatdetail">
                             <div class="navchat">

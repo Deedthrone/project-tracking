@@ -105,6 +105,12 @@
     font-weight: bold;
 }
 
+.biocontain {
+    background-color: green;
+    height: 40px;
+    width: 540px;
+}
+
 .biodata ul li {
     list-style: none;
     position: relative;
@@ -113,6 +119,7 @@
     font-size: 12px;
     color: #E2EFFC;
     font-weight: bold;
+    overflow: hidden;
 }
 
 .chatbox a { 
@@ -126,7 +133,7 @@
     color: #E2EFFC;
     position: relative;
     left: 600px;
-    bottom: 80px;
+    bottom: 95px;
 }
 
 .chatbox a:hover { 
@@ -134,6 +141,67 @@
     background-color: red;
 }
 
+/* CHAT 2 */
+
+.chatbox2 {
+    width: 697px;
+    height: 60px;
+    background-color: #11121D;
+    border: solid #25283A;
+    border-top: 1px;
+    border-right: 1px;
+    border-left: 1px;
+    box-sizing: border-box;
+    padding: 7px;
+}
+
+.profile2 {
+    background-color: #25283A;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+    color: #495A71;
+}
+
+.profile2 p {
+    margin-top: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.biodata2 ul li {
+    list-style: none;
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+    font-size: 12px;
+    color: #495A71;
+    font-weight: bold;
+    width: 540px;
+    overflow: hidden;
+}
+
+.chatbox2 a { 
+    text-decoration: none;
+}
+
+.chatbox2 h1 { 
+    text-decoration: none;
+    font-size: 12px;
+    text-decoration: none;
+    color: #495A71;
+    position: relative;
+    left: 600px;
+    bottom: 95px;
+}
+
+.chatbox2 a:hover { 
+    text-decoration: none;
+    background-color: red;
+}
+
+/* CHAT FEATURE */
 .chatfeature {
     width: 50px;
     height: 100%;

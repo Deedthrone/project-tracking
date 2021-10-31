@@ -15,34 +15,35 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\User::factory(10)->create();
+        \App\Models\Inbox::factory(30)->create();
 
-        Inbox::create([
-            'name' => 'Yosua Christopher',
-            'subject' => 'Tugas 1',
-            'slug' => 'chat-1',
-            'type' => 'inbox',
-            'excerpt' => 'Permisi mas tugas 1 buat aplikasi Project Tracking apakah sudah selesai?',
-            'message' => 'Permisi mas tugas 1 buat aplikasi Project Tracking apakah sudah selesai?'
-        ]);
+        // Inbox::create([
+        //     'name' => 'Yosua Christopher',
+        //     'subject' => 'Tugas 1',
+        //     'slug' => 'chat-1',
+        //     'type' => 1,
+        //     'excerpt' => 'Permisi mas tugas 1 buat aplikasi Project Tracking apakah sudah selesai?',
+        //     'message' => 'Permisi mas tugas 1 buat aplikasi Project Tracking apakah sudah selesai?'
+        // ]);
 
-        Inbox::create([
-            'name' => 'Mutia Habeahan',
-            'subject' => 'Tugas 2',
-            'slug' => 'chat-2',
-            'type' => 'inbox',
-            'excerpt' => 'Tolong segera selesaikan desain dari project tracking',
-            'message' => 'Tolong segera selesaikan desain dari project tracking dikarenakan sudah hampir mencapai deadline!'
-        ]);
+        // Inbox::create([
+        //     'name' => 'Muhammad Muclis',
+        //     'subject' => 'Tugas 2',
+        //     'slug' => 'chat-2',
+        //     'type' => 1,
+        //     'excerpt' => 'Tolong segera selesaikan desain dari project tracking',
+        //     'message' => 'Tolong segera selesaikan desain dari project tracking dikarenakan sudah hampir mencapai deadline!'
+        // ]);
 
-        Inbox::create([
-        'slug' => 'chat-3',
-            'name' => 'Muchammad Muchlis',
-            'type' => 'outbox',
-            'subject' => 'Tugas 3',
-            'excerpt' => 'Permisi pak, bolehkah saya bantu dalam meetingnya',
-            'message' => 'Permisi pak, bolehkah saya bantu dalam meetingnya'
-        ]);
+        // Inbox::create([
+        //     'name' => 'Mutia Habeahan',
+        //     'subject' => 'Tugas 3',
+        //     'slug' => 'chat-3',
+        //     'type' => 2,
+        //     'excerpt' => 'Permisi pak, bolehkah saya bantu dalam meetingnya',
+        //     'message' => 'Permisi pak, bolehkah saya bantu dalam meetingnya'
+        // ]);
 
         // Task::create([
         //     'judultask' => 'ini adalah tugas',
@@ -53,29 +54,29 @@ class DatabaseSeeder extends Seeder
             
         // ]);
 
-        Task::create([
-            'category' => 'Today',
-            'titletask' => 'Tugas 1',
-            'body' => 'Berisap siap untuk menyelesaikan project pada laravel ini pada tanggal 28',
-            'subtask' => 'menggambar',
-            'priority' => 'red'
-        ]);
+        // Task::create([
+        //     'category' => 'Today',
+        //     'titletask' => 'Tugas 1',
+        //     'body' => 'Berisap siap untuk menyelesaikan project pada laravel ini pada tanggal 28',
+        //     'subtask' => 'menggambar',
+        //     'priority' => 'red'
+        // ]);
 
-        Task::create([
-            'category' => 'This Week',
-            'titletask' => 'Tugas 2',
-            'body' => 'Tugas kuliah merangkum pak Tutut',
-            'subtask' => 'mewarnai',
-            'priority' => 'yellow'
-        ]);
+        // Task::create([
+        //     'category' => 'This Week',
+        //     'titletask' => 'Tugas 2',
+        //     'body' => 'Tugas kuliah merangkum pak Tutut',
+        //     'subtask' => 'mewarnai',
+        //     'priority' => 'yellow'
+        // ]);
 
-        Task::create([
-            'category' => 'This Month',
-            'titletask' => 'Tugas 3',
-            'body' => 'Pembuatan document MPDsI pada kelas pak Romeo',
-            'subtask' => 'menulis',
-            'priority' => 'green'
-        ]);
+        // Task::create([
+        //     'category' => 'This Month',
+        //     'titletask' => 'Tugas 3',
+        //     'body' => 'Pembuatan document MPDsI pada kelas pak Romeo',
+        //     'subtask' => 'menulis',
+        //     'priority' => 'green'
+        // ]);
 
         
 

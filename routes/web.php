@@ -61,8 +61,14 @@ Route::get('/inboxs', [InboxController::class, 'index']);
 
 Route::get('/inboxs/{inbox:slug}', [InboxController::class, 'show']);
 
-Route::get('/inboxs/outboxs', [InboxController::class, 'outbox']);
+// Route::get('/inboxs/{outbox:type}', [InboxController::class, 'outbox']);
 
+Route::get('/inboxs/{outbox:type}', function(Inboxs $type){
+    return view('category', [
+        'name' => $type->name,
+        'category' => $type->name
+    ]);
+});
 
 // Chart --------------------------------------------------------------------
 
