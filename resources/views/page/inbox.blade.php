@@ -1,7 +1,10 @@
-@extends('layouts.inbox-slug')
+@extends('layouts.main')
+
+@extends('layouts.inbox-layout')
 
 @section('inbox')
 <!-- ISI -->
+
 <div class="navinbox">
     <i class='bx bx-search-alt-2 bx-sm'></i><input type="text" placeholder="Search..">
 </div>
@@ -32,9 +35,9 @@
         </div>
             <div class="chatlist">
                     <table>
-                        @foreach ($subinboxs as $subinbox)
+                        @foreach ($inboxs as $inbox)
 
-                        @if ( $subinbox->type == 1 )
+                        @if ( $inbox->type == 1 )
 
                         <tr>
                             <td>
@@ -48,8 +51,8 @@
                                             <div class="biodata">
                                                 <div class="biocontain">
                                                     <ul>
-                                                        <li>{{ $subinbox->name }}</li>
-                                                        <li><p>{{ $subinbox->message }}</p></li>
+                                                        <li>{{ $inbox->name }}</li>
+                                                        <li><p>{{ $inbox->message }}</p></li>
                                                     </ul>
                                                 </div>
                                                 <h1>{{ date("M d, Y"); }}</h1>
@@ -65,7 +68,7 @@
                         <tr>
                             <td>
                                 <div class="chatbox2">
-                                    <a href="/inboxs/{{ $subinbox->slug }}">
+                                    <a href="/inboxs/{{ $inbox->slug }}">
                                         <button>
                                             <div class="profile2">
                                                 <p>P</p>
@@ -74,8 +77,8 @@
                                             <div class="biodata2">
                                                 <div class="biocontain2">
                                                     <ul>
-                                                        <li>{{ $subinbox->name }}</li>
-                                                        <li><p>{{ $subinbox->message }}</p></li>
+                                                        <li>{{ $inbox->name }}</li>
+                                                        <li><p>{{ $inbox->message }}</p></li>
                                                     </ul>
                                                 </div>
                                                 <h1>{{ date("M d, Y"); }}</h1>
@@ -90,8 +93,12 @@
 
                         @endforeach
                         <div class="chatdetail">
-                            <div class="navchat">
+                            {{-- <div class="navchat">
                                 <p>Test => {{ $inbox->name }}</p>    
+                            </div> --}}
+                            <h1>{{ $inbox->subject }}</h1>
+                            <div class="chatbody">
+                               
                             </div>
                         </div>
                 </table>
