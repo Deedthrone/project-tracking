@@ -18,7 +18,7 @@ $subtask = 2;
                     <ul>
                         <!-- HEADER -->
                         <li>
-                            {{ $task->titletask }}
+                            {{ $tasks->titletask }}
                         </li>
     
                         <!-- + and ... -->

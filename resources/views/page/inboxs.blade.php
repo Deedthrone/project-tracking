@@ -32,6 +32,7 @@
             </div>
     
     
+
         </div>
             <div class="chatlist">
                     <table>
@@ -88,20 +89,20 @@
                                 </div>
                             </td>
                         </tr>
+                    </table>
 
-                        @endif
+                    @endif
 
-                        @endforeach
-                        <div class="chatdetail">
-                            {{-- <div class="navchat">
-                                <p>Test => {{ $inbox->name }}</p>    
-                            </div> --}}
-                            <h1>{{ $inbox->subject }}</h1>
-                            <div class="chatbody">
-                               
-                            </div>
-                        </div>
-                </table>
+                    @endforeach
+                </form>
+                <div class="chatdetail">
+                    <div class="navchat">
+                        <p>Test => {{ $inbox->name }}</p>    
+                    </div>
+                    <div class="chatbody">
+                       
+                    </div>
+                </div>
         </div>
 </div>
 

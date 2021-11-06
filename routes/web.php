@@ -33,7 +33,7 @@ Route::get('/laravel', function () {
 
 // Login --------------------------------------------------------------------
 Route::get('/', function () {
-    return view('page/login', [
+    return view('page/login'    , [
         "title" => "login"
     ]);
 });
@@ -60,6 +60,8 @@ Route::get('/task', [TaskController::class, 'sourcetask']);
 Route::get('/inboxs', [InboxController::class, 'index']);
 
 Route::get('/inboxs/{inbox:slug}', [InboxController::class, 'show']);
+
+Route::get('/inbox/{inbox:slug}', [InboxController::class, 'else']);
 
 Route::get('/inbox', [InboxController::class, 'subindex']);
 

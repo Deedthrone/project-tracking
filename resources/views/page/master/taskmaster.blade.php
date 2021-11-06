@@ -1,15 +1,33 @@
-@extends('layouts.main')
+@extends('layouts.task-layout')
 
-@section('home')
+@section('mytask')
 
 <!-- ISI -->
 
-<div class="home">
     <div class="homecontent">
     @include('partials.navigbar')
-        <h1>test</h1>
+
+        @include('partials.backlog')
+            <div class="pencarian">
+            <h4>Search</h4>
+                <form action="" method="post">
+                    <ul>   
+                        <li>
+                        <select name="cars" id="cars">
+                            <option value="volvo">Date</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" placeholder="searchby">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        @include('partials.source-task') 
+        
     </div>
-    
-</div>
 
 @endsection

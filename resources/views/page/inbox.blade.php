@@ -1,10 +1,7 @@
-@extends('layouts.main')
-
-@extends('layouts.inbox-layout')
+@extends('layouts.inbox-slug')
 
 @section('inbox')
 <!-- ISI -->
-
 <div class="navinbox">
     <i class='bx bx-search-alt-2 bx-sm'></i><input type="text" placeholder="Search..">
 </div>
@@ -35,6 +32,7 @@
         </div>
             <div class="chatlist">
                     <table>
+                        <form action="" method="get">
                         @foreach ($inboxs as $inbox)
 
                         @if ( $inbox->type == 1 )
@@ -42,7 +40,7 @@
                         <tr>
                             <td>
                                 <div class="chatbox">
-                                    <a href="/inboxs/{{ $inbox->slug }}">
+                                    <a href="/inbox/{{ $inbox->slug }}">
                                         <button>
                                             <div class="profile">
                                                 <p>P</p>
@@ -62,13 +60,13 @@
                                 </div>
                             </td>
                         </tr>
-
+                        
                         @else
 
                         <tr>
                             <td>
                                 <div class="chatbox2">
-                                    <a href="/inboxs/{{ $inbox->slug }}">
+                                    <a href="/inbox/{{ $inbox->slug }}">
                                         <button>
                                             <div class="profile2">
                                                 <p>P</p>
@@ -92,16 +90,25 @@
                         @endif
 
                         @endforeach
-                        <div class="chatdetail">
-                            {{-- <div class="navchat">
-                                <p>Test => {{ $inbox->name }}</p>    
-                            </div> --}}
-                            <h1>{{ $inbox->subject }}</h1>
-                            <div class="chatbody">
-                               
-                            </div>
+                        </form>
+                    </table>
+
+                <div class="chatdetail">
+                    {{-- <div class="navchat">
+                        <p>Test => {{ $inbox->name }}</p>    
+                    </div> --}}
+                    <h1>{{ $inbox->subject }}</h1>
+                    <div class="chatbody">
+                        <div class="profile">
+                            <p>P</p>
                         </div>
-                </table>
+                        {{ $inbox->name }}
+                    </div>
+
+                    <div class="chatbody">
+                        <p>{{ $isi }}</p>
+                    </div>
+                </div>
         </div>
 </div>
 

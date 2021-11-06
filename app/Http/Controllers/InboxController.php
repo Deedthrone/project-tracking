@@ -21,19 +21,39 @@ class InboxController extends Controller
     {
         return view('page/inbox', [
             "title" => "Single Post",
-            "inbox" => $inbox
+            "inbox" => $inbox,
+            "isi" => $inbox->message,
+            "inboxs" => Inbox::all()
         ]);
     }
 
-    // INBOX
-
-    public function subindex()
+    public function else(Inbox $inbox)
     {
         return view('page/inbox', [
-            "title" => "inbox",
+            "title" => "Single Post",
+            "subinbox" => $inbox,
             "subinboxs" => Inbox::all()
         ]);
     }
+
+    // public function show(Inbox $inbox)
+    // {
+    //     return view('page/inbox', [
+    //         "title" => "Single Post",
+    //         "inbox" => $inbox,
+    //         "inboxs" => Inbox::all()
+    //     ]);
+    // }
+
+    // INBOX
+
+    // public function subindex()
+    // {
+    //     return view('page/inbox', [
+    //         "title" => "inbox",
+    //         "subinboxs" => Inbox::all()
+    //     ]);
+    // }
 
     // OUTBOXS
 
