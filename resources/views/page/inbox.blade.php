@@ -12,7 +12,7 @@
             <div class="chatfeature">
             </div>
             <div class="chatfeature">
-                <a href="">
+                <a href="../inboxs">
                     <i class='bx bxs-inbox bx-md'></i>
                 </a>
             </div>
@@ -32,16 +32,18 @@
         </div>
             <div class="chatlist">
                     <table>
-                        <form action="" method="get">
+                        <form action="inboxs/" method="get">
                         @foreach ($inboxs as $inbox)
 
                         @if ( $inbox->type == 1 )
-
+                        
                         <tr>
                             <td>
                                 <div class="chatbox">
-                                    <a href="/inbox/{{ $inbox->slug }}">
-                                        <button>
+                                    <a href="/inboxs/{{ $inbox->slug }}">
+                                        <button  type="submit" name="detailchat">
+                                            <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+                                            <input type="hidden" name="specid" value="{{ $inbox->id }}">
                                             <div class="profile">
                                                 <p>P</p>
                                             </div>
@@ -60,14 +62,15 @@
                                 </div>
                             </td>
                         </tr>
-                        
                         @else
 
                         <tr>
                             <td>
                                 <div class="chatbox2">
-                                    <a href="/inbox/{{ $inbox->slug }}">
-                                        <button>
+                                    <a href="/inboxs/{{ $inbox->slug }}">
+                                        <button type="submit" name="detailchat">
+                                            <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+                                            <input type="hidden" name="specid" value="{{ $inbox->id }}">
                                             <div class="profile2">
                                                 <p>P</p>
                                             </div>
@@ -106,7 +109,7 @@
                     </div>
 
                     <div class="chatbody">
-                        <p>{{ $isi }}</p>
+                        
                     </div>
                 </div>
         </div>

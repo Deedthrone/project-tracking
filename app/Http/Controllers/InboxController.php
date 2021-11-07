@@ -36,6 +36,24 @@ class InboxController extends Controller
         ]);
     }
 
+    public function sewahitung(Request $xx, $id)
+    {
+        $price=$xx->input('price');
+        $durasi=$xx->input('durasi');
+    	$quantity=$xx->input('quantity');
+        $charge=$xx->input('charge');
+        
+        $datatotal = new Katalog();
+        $printtotal = $datatotal->sewasubtotal($price, $quantity, $durasi, $charge);
+        
+        return view('page/sewa', [
+            "title" => "Detail",
+            "katalog" => Katalog::find($id),
+            "subtotal" => 0,
+            "total" => $printtotal
+        ]);
+    }
+
     // public function show(Inbox $inbox)
     // {
     //     return view('page/inbox', [
