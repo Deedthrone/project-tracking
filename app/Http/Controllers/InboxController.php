@@ -28,6 +28,16 @@ class InboxController extends Controller
         ]);
     }
 
+    public function outbox()
+    {
+        return view('/page/outboxs', [
+            'title' => $category->name,
+            'posts' => $category->posts,
+            'category' => $category->name
+        ]);
+    }
+
+
     public function show(Inbox $inbox)
     {
         return view('/page/inbox', [
@@ -35,29 +45,7 @@ class InboxController extends Controller
             "test" => $inbox,
             "inboxs" => Inbox::all()
         ]);
-    }
-
-    public function else(Inbox $data)
-    {
-        $specsubject=$data->input('specsubject');
-        $specname=$data->input('specname');
-    	$specmessage=$data->input('specmessage');
-        $specid=$data->input('specid');
-        
-        $showdetail = new Inbox();
-        $cetakId = $showdetail->printId($a);
-        $cetakNama = $showdetail->printNama($b);
-        $cetakSubject = $showdetail->printSubject($c);
-        $cetakMessage = $showdetail->printMessage($d);
-        return view('/page/inbox', [
-            "title" => "Single Post",
-            "subject" => $cetakId,
-            "name" => $cetakNama,
-            "subject" => $cetakSubject,
-            "message" => $cetakMessage,
-            "subinboxs" => Inbox::all()
-        ]);
-    }
+    }   
 
     // --------------------------------------------
 

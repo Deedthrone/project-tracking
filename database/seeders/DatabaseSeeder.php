@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\Inbox;
 use App\Models\Task;
+use App\Models\Type;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,6 +18,14 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(10)->create();
         \App\Models\Inbox::factory(30)->create();
+
+        Type::create([
+            'type' => 'inbox'
+        ]);
+
+        Type::create([
+            'type' => 'outbox'
+        ]);
 
         // Inbox::create([
         //     'name' => 'Yosua Christopher',
