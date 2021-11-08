@@ -11,29 +11,72 @@ class InboxController extends Controller
     // INBOXS
     public function index()
     {
+        $x = 1;
         return view('page/inboxs', [
             "title" => "inbox",
+            "inboxs" => Inbox::all(),
+            "test" => ''
+        ]);
+    }
+
+    public function test(Inbox $inbox)
+    {
+        return view('/page/inboxs', [
+            "title" => "Single Post",
+            "test" => $inbox,
             "inboxs" => Inbox::all()
         ]);
     }
 
     public function show(Inbox $inbox)
     {
-        return view('page/inbox', [
+        return view('/page/inbox', [
             "title" => "Single Post",
-            "inbox" => $inbox,
-            "isi" => $inbox->message,
+            "test" => $inbox,
             "inboxs" => Inbox::all()
         ]);
     }
 
-    public function else(Inbox $inbox)
+    public function else(Inbox $data)
     {
-        return view('page/inbox', [
+        $specsubject=$data->input('specsubject');
+        $specname=$data->input('specname');
+    	$specmessage=$data->input('specmessage');
+        $specid=$data->input('specid');
+        
+        $showdetail = new Inbox();
+        $cetakId = $showdetail->printId($a);
+        $cetakNama = $showdetail->printNama($b);
+        $cetakSubject = $showdetail->printSubject($c);
+        $cetakMessage = $showdetail->printMessage($d);
+        return view('/page/inbox', [
             "title" => "Single Post",
-            "subinbox" => $inbox,
+            "subject" => $cetakId,
+            "name" => $cetakNama,
+            "subject" => $cetakSubject,
+            "message" => $cetakMessage,
             "subinboxs" => Inbox::all()
         ]);
+    }
+
+    // --------------------------------------------
+
+    public function CetakDataMhsku(Request $data) {
+    	$a=$data->input('namamhs');
+    	$b=$data->input('nimmhs');
+    	$c=$data->input('jurmhs');
+    	$d=$data->input('aktmhs');
+    	$datamhs = new CekLulus(); //nama models
+    	$printnama = $datamhs->cetakNama($a);
+    	$printnim = $datamhs->cetakNim($b);
+    	$printjur = $datamhs->cetakJur($c);
+    	$printlus = $datamhs->hitungLulus($d);
+    	return view ('isidatamhs', 
+    		['namamhsku'=>$printnama,
+    		'nimmhsku'=>$printnim,
+    		'jurmhsku'=>$printjur,
+    		'tahunlulus'=>$printlus
+    	]);
     }
 
     public function sewahitung(Request $xx, $id)

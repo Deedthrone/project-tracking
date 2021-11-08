@@ -10,6 +10,26 @@ class Inbox extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
+
+    // RETURN
+    public function printId($a) {
+    	return $a;
+    }
+    public function printNama($b) {
+    	return $b;
+    }
+    public function printSubject($c) {
+    	return $c;
+    }
+
+    public function printMessage($d) {
+    	return $d;
+    }
+
+
+
+
+    // SCHEMA
     
     public function category()
     {

@@ -1,10 +1,7 @@
-@extends('layouts.main')
-
-@extends('layouts.inbox-layout')
+@extends('layouts.inbox-slug')
 
 @section('inbox')
 <!-- ISI -->
-
 <div class="navinbox">
     <i class='bx bx-search-alt-2 bx-sm'></i><input type="text" placeholder="Search..">
 </div>
@@ -15,7 +12,7 @@
             <div class="chatfeature">
             </div>
             <div class="chatfeature">
-                <a href="">
+                <a href="../inboxs">
                     <i class='bx bxs-inbox bx-md'></i>
                 </a>
             </div>
@@ -35,33 +32,99 @@
         </div>
             <div class="chatlist">
                     <table>
+                        {{-- <form action="/inbox" method="get"> --}}
                         @foreach ($inboxs as $inbox)
+
+                        @if ( $inbox->type == 1 )
+                        
                         <tr>
                             <td>
                                 <div class="chatbox">
                                     <a href="/inboxs/{{ $inbox->slug }}">
-                                        <div class="profile">
-                                            <p>P</p>
-                                        </div>
+                                        {{-- INPUT --}}
+                                        <button  type="submit" name="detailchat">
+                                            <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+                                            <input type="hidden" name="specid" value="{{ $inbox->id }}">
+                                            <input type="hidden" name="specname" value="{{ $inbox->name }}">
+                                            <input type="hidden" name="specsubject" value="{{ $inbox->subject }}">
+                                            <input type="hidden" name="specmessage" value="{{ $inbox->message }}">
 
-                                        <div class="biodata">
-                                            <ul>
-                                                <li>{{ $inbox->name }}</li>
-                                                <li><p>{{ $inbox->excerpt }}</p></li>
-                                            </ul>
-                                            <h1>{{ date("M d, Y"); }}</h1>
-                                        </div>
+
+                                            <div class="profile">
+                                                <p>P</p>
+                                            </div>
+
+                                            <div class="biodata">
+                                                <div class="biocontain">
+                                                    <ul>
+                                                        <li>{{ $inbox->name }}</li>
+                                                        <li><p>{{ $inbox->message }}</p></li>
+                                                    </ul>
+                                                </div>
+                                                <h1>{{ date("M d, Y"); }}</h1>
+                                            </div>
+                                        </button>
                                     </a>
                                 </div>
                             </td>
                         </tr>
+                        @else
+
+                        <tr>
+                            <td>
+                                <div class="chatbox2">
+                                    <a href="/inboxs/{{ $inbox->slug }}">
+                                        {{-- INPUT --}}
+                                        <button type="submit" name="detailchat">
+                                            <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+                                            <input type="hidden" name="specid" value="{{ $inbox->id }}">
+                                            <input type="hidden" name="specname" value="{{ $inbox->name }}">
+                                            <input type="hidden" name="specsubject" value="{{ $inbox->subject }}">
+                                            <input type="hidden" name="specmessage" value="{{ $inbox->message }}">
+
+
+                                            <div class="profile2">
+                                                <p>P</p>
+                                            </div>
+
+                                            <div class="biodata2">
+                                                <div class="biocontain2">
+                                                    <ul>
+                                                        <li>{{ $inbox->name }}</li>
+                                                        <li><p>{{ $inbox->message }}</p></li>
+                                                    </ul>
+                                                </div>
+                                                <h1>{{ date("M d, Y"); }}</h1>
+                                            </div>
+                                        </button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        @endif
+
                         @endforeach
-                        <div class="chatdetail">
-                            <div class="navchat">
-                                <p>You can start chat here feel free to chat anything</p>    
-                            </div>
+                        {{-- </form> --}}
+                    </table>
+
+                <div class="chatdetail">
+                    {{-- <div class="navchat">
+                        <p>Test => {{ $inbox->name }}</p>    
+                    </div> --}}
+                    <h1>{{ $test->subject }}</h1>
+                    <div class="chatbody">
+                        <div class="profile">
+                            <p>P</p>
+                            
                         </div>
-                </table>
+                        <h1>{{ $test->name }}</h1>
+                    </div>
+    
+                    <div class="chatbody">
+                        {{ $test->message }}
+                    </div>
+                </div>
         </div>
 </div>
 

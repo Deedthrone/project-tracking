@@ -23,8 +23,7 @@ class DatabaseSeeder extends Seeder
         //     'subject' => 'Tugas 1',
         //     'slug' => 'chat-1',
         //     'type' => 1,
-        //     'excerpt' => 'Permisi mas tugas 1 buat aplikasi Project Tracking apakah sudah selesai?',
-        //     'message' => 'Permisi mas tugas 1 buat aplikasi Project Tracking apakah sudah selesai?'
+        //     'message' => ''
         // ]);
 
         // Inbox::create([

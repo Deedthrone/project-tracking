@@ -61,7 +61,11 @@ Route::get('/inboxs', [InboxController::class, 'index']);
 
 Route::get('/inboxs/{inbox:slug}', [InboxController::class, 'show']);
 
-// Route::get('/inboxs/{inbox:slug}', [InboxController::class, 'else']);
+Route::get('/outboxs/{inbox:type}', [InboxController::class, 'outbox']);
+
+Route::get('{inbox:slug}', [InboxController::class, 'test']);
+
+Route::get('/inbox', [InboxController::class, 'else']);
 
 Route::get('/inbox', [InboxController::class, 'subindex']);
 

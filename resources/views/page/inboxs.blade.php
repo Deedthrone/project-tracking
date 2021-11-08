@@ -4,7 +4,6 @@
 
 @section('inbox')
 <!-- ISI -->
-
 <div class="navinbox">
     <i class='bx bx-search-alt-2 bx-sm'></i><input type="text" placeholder="Search..">
 </div>

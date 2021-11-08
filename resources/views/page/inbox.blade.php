@@ -32,7 +32,7 @@
         </div>
             <div class="chatlist">
                     <table>
-                        <form action="inboxs/" method="get">
+                        {{-- <form action="/inbox" method="get"> --}}
                         @foreach ($inboxs as $inbox)
 
                         @if ( $inbox->type == 1 )
@@ -41,9 +41,15 @@
                             <td>
                                 <div class="chatbox">
                                     <a href="/inboxs/{{ $inbox->slug }}">
+                                        {{-- INPUT --}}
                                         <button  type="submit" name="detailchat">
                                             <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                             <input type="hidden" name="specid" value="{{ $inbox->id }}">
+                                            <input type="hidden" name="specname" value="{{ $inbox->name }}">
+                                            <input type="hidden" name="specsubject" value="{{ $inbox->subject }}">
+                                            <input type="hidden" name="specmessage" value="{{ $inbox->message }}">
+
+
                                             <div class="profile">
                                                 <p>P</p>
                                             </div>
@@ -68,9 +74,15 @@
                             <td>
                                 <div class="chatbox2">
                                     <a href="/inboxs/{{ $inbox->slug }}">
+                                        {{-- INPUT --}}
                                         <button type="submit" name="detailchat">
                                             <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                             <input type="hidden" name="specid" value="{{ $inbox->id }}">
+                                            <input type="hidden" name="specname" value="{{ $inbox->name }}">
+                                            <input type="hidden" name="specsubject" value="{{ $inbox->subject }}">
+                                            <input type="hidden" name="specmessage" value="{{ $inbox->message }}">
+
+
                                             <div class="profile2">
                                                 <p>P</p>
                                             </div>
@@ -93,23 +105,24 @@
                         @endif
 
                         @endforeach
-                        </form>
+                        {{-- </form> --}}
                     </table>
 
                 <div class="chatdetail">
                     {{-- <div class="navchat">
                         <p>Test => {{ $inbox->name }}</p>    
                     </div> --}}
-                    <h1>{{ $inbox->subject }}</h1>
+                    <h1>{{ $test->subject }}</h1>
                     <div class="chatbody">
                         <div class="profile">
                             <p>P</p>
+                            
                         </div>
-                        {{ $inbox->name }}
+                        <h1>{{ $test->name }}</h1>
                     </div>
-
+    
                     <div class="chatbody">
-                        
+                        {{ $test->message }}
                     </div>
                 </div>
         </div>
