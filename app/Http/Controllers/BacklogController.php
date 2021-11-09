@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Goal;
+use App\Models\Backlog;
 
-class GoalController extends Controller
+class BacklogController extends Controller
 {
     //
 }

@@ -33,7 +33,7 @@
             <div class="chatlist">
                     <table>
                         {{-- <form action="/inbox" method="get"> --}}
-                        @foreach ($inboxs as $inbox)
+                        @foreach ($types as $type)
 
                         @if ( $inbox->type == 1 )
                         

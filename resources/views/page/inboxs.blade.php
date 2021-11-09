@@ -7,7 +7,9 @@
 <div class="navinbox">
     <i class='bx bx-search-alt-2 bx-sm'></i><input type="text" placeholder="Search..">
 </div>
-
+@foreach ($inboxs as $inbox)
+    <input type="hidden" value="{{ $inbox->id }}">
+@endforeach
 <div class="boxchat">
     <div class="boxchat">
         <div class="headbox">
@@ -19,7 +21,7 @@
                 </a>
             </div>
             <div class="chatfeature">
-                <a href="">
+                <a href="/outboxs/{{ $inbox->slug }}">
                     <i class='bx bx-mail-send bx-md'></i>
                 </a>
             </div>

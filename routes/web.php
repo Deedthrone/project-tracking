@@ -63,6 +63,13 @@ Route::get('/inboxs/{inbox:slug}', [InboxController::class, 'show']);
 
 Route::get('/outboxs/{type:type}', [InboxController::class, 'outbox']);
 
+Route::get('/outboxs/{type:type}', function(Type $type){
+    return view('category', [
+        'posts' => $category->posts,
+        'category' => $category->name
+    ]);
+});
+
 Route::get('{inbox:slug}', [InboxController::class, 'test']);
 
 Route::get('/inbox', [InboxController::class, 'else']);

@@ -22,7 +22,12 @@ class TaskFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'category' => mt_rand(1,2),
+            'titletask' => mt_rand(1,2),
+            'body' => $this->faker->sentence(mt_rand(1,2)),
+            'subtask' => $this->faker->sentence(mt_rand(1,2)),
+            'priority' => $this->faker->paragraph(mt_rand(2,11)),
+
         ];
     }
 }

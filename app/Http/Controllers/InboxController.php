@@ -28,7 +28,7 @@ class InboxController extends Controller
         ]);
     }
 
-    public function outbox()
+    public function outbox(Type $type)
     {
         return view('/page/outboxs', [
             'title' => $category->name,
