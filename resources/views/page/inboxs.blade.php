@@ -7,30 +7,44 @@
 <div class="navinbox">
     <i class='bx bx-search-alt-2 bx-sm'></i><input type="text" placeholder="Search..">
 </div>
+
+{{-- DECLARATION --}}
 @foreach ($inboxs as $inbox)
     <input type="hidden" value="{{ $inbox->id }}">
 @endforeach
+
+
 <div class="boxchat">
     <div class="boxchat">
         <div class="headbox">
-            <div class="chatfeature">
-            </div>
-            <div class="chatfeature">
-                <a href="">
-                    <i class='bx bxs-inbox bx-md'></i>
-                </a>
-            </div>
-            <div class="chatfeature">
-                <a href="/outboxs/{{ $inbox->slug }}">
-                    <i class='bx bx-mail-send bx-md'></i>
-                </a>
-            </div>
-            <div class="chatfeature">
+
+            @foreach ($types as $type)
                 
-            </div>
-            <div class="chatfeature">
-                
-            </div>
+                @if ( $type->name === "inbox")
+                <div class="chatfeature">
+                    <a href="/outboxs/{{ $type->name }}">
+                        <i class='bx bxs-inbox bx-md'></i>
+                    </a>
+                </div>
+
+                @elseif ($type->name === "outbox")
+                <div class="chatfeature">
+                    <a href="/outboxs/{{ $type->name }}">
+                        <i class='bx bx-mail-send bx-md'></i>
+                    </a>
+                </div>
+
+                @elseif ($type->name === "favorit")
+                <div class="chatfeature">
+                    <a href="/outboxs/{{ $type->name }}">
+                        <i class='bx bx-mail-send bx-md'></i>
+                    </a>
+                </div>
+                @else
+
+                @endif
+
+            @endforeach
     
     
 
@@ -39,7 +53,7 @@
                     <table>
                         @foreach ($inboxs as $inbox)
 
-                        @if ( $inbox->type == 1 )
+                        @if ( $inbox->type_id == 1 )
 
                         <tr>
                             <td>
@@ -104,7 +118,7 @@
                        
                     </div>
                 </div>
-        </div>
+    </div>
 </div>
 
 @endsection

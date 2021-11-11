@@ -2,54 +2,63 @@
 
 @section('inbox')
 <!-- ISI -->
+<!-- ISI -->
 <div class="navinbox">
     <i class='bx bx-search-alt-2 bx-sm'></i><input type="text" placeholder="Search..">
 </div>
 
+{{-- DECLARATION --}}
+@foreach ($inboxs as $inbox)
+    <input type="hidden" value="{{ $inbox->id }}">
+@endforeach
+
+
 <div class="boxchat">
     <div class="boxchat">
         <div class="headbox">
-            <div class="chatfeature">
-            </div>
-            <div class="chatfeature">
-                <a href="../inboxs">
-                    <i class='bx bxs-inbox bx-md'></i>
-                </a>
-            </div>
-            <div class="chatfeature">
-                <a href="">
-                    <i class='bx bx-mail-send bx-md'></i>
-                </a>
-            </div>
-            <div class="chatfeature">
+
+            @foreach ($types as $type)
                 
-            </div>
-            <div class="chatfeature">
-                
-            </div>
+                @if ( $type->name === "inbox")
+                <div class="chatfeature">
+                    <a href="/outboxs/{{ $type->name }}">
+                        <i class='bx bxs-inbox bx-md'></i>
+                    </a>
+                </div>
+
+                @elseif ($type->name === "outbox")
+                <div class="chatfeature">
+                    <a href="/outboxs/{{ $type->name }}">
+                        <i class='bx bx-mail-send bx-md'></i>
+                    </a>
+                </div>
+
+                @elseif ($type->name === "favorit")
+                <div class="chatfeature">
+                    <a href="/outboxs/{{ $type->name }}">
+                        <i class='bx bx-mail-send bx-md'></i>
+                    </a>
+                </div>
+                @else
+
+                @endif
+
+            @endforeach
     
     
+
         </div>
             <div class="chatlist">
                     <table>
-                        {{-- <form action="/inbox" method="get"> --}}
-                        @foreach ($types as $type)
+                        @foreach ($inboxs as $inbox)
 
-                        @if ( $inbox->type == 1 )
-                        
+                        @if ( $inbox->type_id == 1 )
+
                         <tr>
                             <td>
                                 <div class="chatbox">
                                     <a href="/inboxs/{{ $inbox->slug }}">
-                                        {{-- INPUT --}}
-                                        <button  type="submit" name="detailchat">
-                                            <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
-                                            <input type="hidden" name="specid" value="{{ $inbox->id }}">
-                                            <input type="hidden" name="specname" value="{{ $inbox->name }}">
-                                            <input type="hidden" name="specsubject" value="{{ $inbox->subject }}">
-                                            <input type="hidden" name="specmessage" value="{{ $inbox->message }}">
-
-
+                                        <button>
                                             <div class="profile">
                                                 <p>P</p>
                                             </div>
@@ -68,21 +77,14 @@
                                 </div>
                             </td>
                         </tr>
+
                         @else
 
                         <tr>
                             <td>
                                 <div class="chatbox2">
                                     <a href="/inboxs/{{ $inbox->slug }}">
-                                        {{-- INPUT --}}
-                                        <button type="submit" name="detailchat">
-                                            <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
-                                            <input type="hidden" name="specid" value="{{ $inbox->id }}">
-                                            <input type="hidden" name="specname" value="{{ $inbox->name }}">
-                                            <input type="hidden" name="specsubject" value="{{ $inbox->subject }}">
-                                            <input type="hidden" name="specmessage" value="{{ $inbox->message }}">
-
-
+                                        <button>
                                             <div class="profile2">
                                                 <p>P</p>
                                             </div>
@@ -101,31 +103,21 @@
                                 </div>
                             </td>
                         </tr>
-
-                        @endif
-
-                        @endforeach
-                        {{-- </form> --}}
                     </table>
 
+                    @endif
+
+                    @endforeach
+                </form>
                 <div class="chatdetail">
-                    {{-- <div class="navchat">
+                    <div class="navchat">
                         <p>Test => {{ $inbox->name }}</p>    
-                    </div> --}}
-                    <h1>{{ $test->subject }}</h1>
-                    <div class="chatbody">
-                        <div class="profile">
-                            <p>P</p>
-                            
-                        </div>
-                        <h1>{{ $test->name }}</h1>
                     </div>
-    
                     <div class="chatbody">
-                        {{ $test->message }}
+                       
                     </div>
                 </div>
-        </div>
+    </div>
 </div>
 
 @endsection

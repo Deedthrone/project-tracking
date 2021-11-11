@@ -20,11 +20,13 @@ class DatabaseSeeder extends Seeder
         \App\Models\Inbox::factory(30)->create();
 
         Type::create([
-            'type' => 'inbox'
+            'name' => 'inbox',
+            'slug' => 'inbox'
         ]);
 
         Type::create([
-            'type' => 'outbox'
+            'name' => 'outbox',
+            'slug' => 'outbox'
         ]);
 
         // Inbox::create([

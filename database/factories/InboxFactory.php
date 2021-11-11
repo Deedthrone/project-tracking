@@ -22,7 +22,7 @@ class InboxFactory extends Factory
     public function definition()
     {
         return [
-            'type' => mt_rand(1,2),
+            'type_id' => mt_rand(1,2),
             'slug' => $this->faker->sentence(mt_rand(1,2)),
             'name' => $this->faker->name(),
             'subject' => $this->faker->sentence(mt_rand(1,2)),

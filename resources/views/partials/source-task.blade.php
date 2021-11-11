@@ -1,15 +1,12 @@
 <!-- Variable -->
 
-<?php
+@php
 
-$taskfield = 4;
-$partask = 2;
-$subtask = 2;
+    $taskfield = 4;
+    $partask = 2;
+    $subtask = 2;
 
-?>
-@foreach ($tasks as $task)
-
-@endforeach
+@endphp
 <!-- LOOPING SOURCETASK -->
 <?php for($i = 0 ; $i < $taskfield ; $i++) : ?>
             
@@ -18,7 +15,7 @@ $subtask = 2;
                     <ul>
                         <!-- HEADER -->
                         <li>
-                            {{ $tasks->titletask }}
+                            {{-- {{ $task->titletask }} --}}
                         </li>
     
                         <!-- + and ... -->
@@ -43,12 +40,12 @@ $subtask = 2;
                                 <!-- button -->
                                 <div class="priority"></div>                               
 
-                                <input type="checkbox"> <label for="">{{ $task->titletask }}</label>
+                                <input type="checkbox"> <label for=""></label>
                                 <span class="checkmark"></span>
                                 <div class="clear"></div>
                                 <!-- CONTENT BAR -->
                                 <p>
-                                    {{ $task->body }}
+                                    {{-- {{ $task->body }} --}}
                                 </p>
                                 
                                 <!-- SUBTASK -->
@@ -56,7 +53,7 @@ $subtask = 2;
                                 <!-- LOOPING SUBTASK -->
                                 <?php for ($sb = 0 ; $sb < $subtask ; $sb++) : ?>
                                 <div class="subtask">
-                                    <input type="checkbox"> <label for="">{{ $task->subtask }}</label>
+                                    <input type="checkbox"> <label for=""></label>
                                 </div>
                                 
                                 <?php endfor;?>

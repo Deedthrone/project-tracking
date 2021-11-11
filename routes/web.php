@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\InboxController;
 use App\Http\Controllers\TaskController;
+use App\Models\Type;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,20 +56,27 @@ Route::get('/home', function () {
 Route::get('/task', [TaskController::class, 'sourcetask']);
 
 
-// Inbox --------------------------------------------------------------------
-
+/*
+|--------------------------------------------------------------------------
+| Inbox 
+|--------------------------------------------------------------------------
+|
+| All inbox function route
+|
+*/
 Route::get('/inboxs', [InboxController::class, 'index']);
 
 Route::get('/inboxs/{inbox:slug}', [InboxController::class, 'show']);
 
-Route::get('/outboxs/{type:type}', [InboxController::class, 'outbox']);
+Route::get('/outboxs/{type:name}', [InboxController::class, 'outbox']);
 
-Route::get('/outboxs/{type:type}', function(Type $type){
-    return view('category', [
-        'posts' => $category->posts,
-        'category' => $category->name
-    ]);
-});
+// Route::get('/outboxs/{type:name}', function(Type $type){
+//     return view('/page/outboxs', [
+//         'title' => $type->name,
+//         'inboxs' => $type->inboxs,  
+//         'type' => $type->type
+//     ]);
+// });     
 
 Route::get('{inbox:slug}', [InboxController::class, 'test']);
 

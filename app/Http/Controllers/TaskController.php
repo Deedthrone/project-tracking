@@ -16,11 +16,11 @@ class TaskController extends Controller
         ]);
     }
 
-    public function show(Task $Task)
-    {
-        return view('inbox', [
-            "title" => "Single Post",
-            "inbox" => $inbox
-        ]);
-    }
+    // public function show(Task $Task)
+    // {
+    //     return view('inbox', [
+    //         "title" => "Single Post",
+    //         "inbox" => $inbox
+    //     ]);
+    // }
 }
