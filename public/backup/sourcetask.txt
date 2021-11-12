@@ -10,14 +10,16 @@
 
 
 <!-- LOOPING SOURCETASK -->
-@foreach ($tasks as $task)
+<?php for($i = 0 ; $i < $taskfield ; $i++) : ?>
+    
+
 
             <!-- SOURCE TASK -->         
                 <div class="taskfield">
                     <ul>
                         <!-- HEADER -->
                         <li>
-                            {{ $task->category }}
+                            asdsasdadsasasd{{-- {{ $task->titletask }} --}}
                         </li>
     
                         <!-- + and ... -->
@@ -42,12 +44,12 @@
                                     <!-- button -->
                                     <div class="priority"></div>                               
 
-                                    <input type="checkbox"> <label for="">{{ $task->titletask }}</label>
+                                    <input type="checkbox"> <label for="">asdasdasdasdasa</label>
                                     <span class="checkmark"></span>
                                     <div class="clear"></div>
                                     <!-- CONTENT BAR -->
                                     <p>
-                                        {{ $task->body }}
+                                        asdasdssd{{-- {{ $task->body }} --}}
                                     </p>
                                     
                                     <!-- SUBTASK -->
@@ -55,7 +57,7 @@
                                     <!-- LOOPING SUBTASK -->
                                     <?php for ($sb = 0 ; $sb < $subtask ; $sb++) : ?>
                                     <div class="subtask">
-                                        <input type="checkbox"> <label for="">{{ $task->subtask }}</label>
+                                        <input type="checkbox"> <label for=""></label>
                                     </div>
                                     
                                     <?php endfor;?>
@@ -77,4 +79,4 @@
                         <?php endfor ?>
                     </div>
                 </div> 
-@endforeach
+<?php endfor; ?>

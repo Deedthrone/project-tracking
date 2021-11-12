@@ -15,12 +15,4 @@ class TaskController extends Controller
             "tasks" => Task::all()
         ]);
     }
-
-    // public function show(Task $Task)
-    // {
-    //     return view('inbox', [
-    //         "title" => "Single Post",
-    //         "inbox" => $inbox
-    //     ]);
-    // }
 }

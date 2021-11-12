@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(10)->create();
         \App\Models\Inbox::factory(30)->create();
+        \App\Models\Task::factory(4)->create();
 
         Type::create([
             'name' => 'inbox',

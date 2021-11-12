@@ -37,7 +37,7 @@
                 @elseif ($type->name === "favorit")
                 <div class="chatfeature">
                     <a href="/outboxs/{{ $type->name }}">
-                        <i class='bx bx-mail-send bx-md'></i>
+                        <i class='bx bxs-star bx-md'></i>
                     </a>
                 </div>
                 @else
@@ -112,7 +112,7 @@
                 </form>
                 <div class="chatdetail">
                     <div class="navchat">
-                        <p>Test => {{ $inbox->name }}</p>    
+                        <p></p>    
                     </div>
                     <div class="chatbody">
                        

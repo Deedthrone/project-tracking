@@ -24,7 +24,7 @@ class TaskFactory extends Factory
         return [
             'category' => $this->faker->sentence(mt_rand(1,2)),
             'titletask' => $this->faker->sentence(mt_rand(1,2)),
-            'body' => $this->faker->sentence(mt_rand(1,2)),
+            'body' => $this->faker->paragraph(mt_rand(1,2)),
             'subtask' => $this->faker->sentence(mt_rand(1,2)),
             'priority' => mt_rand(1,2),
         ];

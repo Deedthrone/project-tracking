@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Task extends Model
+class Project extends Model
 {
     use HasFactory;
 
-    public function project()
+    public function task()
     {
-        return $this->belongsTo(Project::class);
+        return $this->hasMany(Task::class);
     }
 
     protected $guarded = ['id'];
