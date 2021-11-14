@@ -6,17 +6,6 @@ use App\Http\Controllers\InboxController;
 use App\Http\Controllers\TaskController;
 use App\Models\Type;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 // Laravel Welcome
 Route::get('/laravel', function () {
     return view('welcome');
@@ -25,10 +14,12 @@ Route::get('/laravel', function () {
 
 /*
 |--------------------------------------------------------------------------
-| Main-Page 
+| Route User
 |--------------------------------------------------------------------------
 |
-| Here is where all ordinary user routing, you can add or edit
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
 |
 */
 
@@ -39,12 +30,23 @@ Route::get('/', function () {
     ]);
 });
 
-// Home --------------------------------------------------------------------
+/*
+|--------------------------------------------------------------------------
+| Route Homeuser - User
+|--------------------------------------------------------------------------
+*/
+
 Route::get('/home', function () {
     return view('page/home', [
         "title" => "Home"
     ]);
 });
+
+/*
+|--------------------------------------------------------------------------
+| Route Task - User
+|--------------------------------------------------------------------------
+*/
 
 // MyTask --------------------------------------------------------------------
 // Route::get('/task', function () {
@@ -58,25 +60,14 @@ Route::get('/task', [TaskController::class, 'sourcetask']);
 
 /*
 |--------------------------------------------------------------------------
-| Inbox 
+| Route Inbox - User
 |--------------------------------------------------------------------------
-|
-| All inbox function route
-|
 */
 Route::get('/inboxs', [InboxController::class, 'index']);
 
 Route::get('/inboxs/{inbox:slug}', [InboxController::class, 'show']);
 
 Route::get('/outboxs/{type:name}', [InboxController::class, 'outbox']);
-
-// Route::get('/outboxs/{type:name}', function(Type $type){
-//     return view('/page/outboxs', [
-//         'title' => $type->name,
-//         'inboxs' => $type->inboxs,  
-//         'type' => $type->type
-//     ]);
-// });     
 
 Route::get('{inbox:slug}', [InboxController::class, 'test']);
 
@@ -86,25 +77,95 @@ Route::get('/inbox', [InboxController::class, 'subindex']);
 
 Route::get('/{inbox:slug}', [InboxController::class, 'test']);
 
-// Route::get('/inboxs/{outbox:type}', [InboxController::class, 'outbox']);
-
-// Route::get('/inboxs/{outbox:type}', function(Inboxs $type){
-//     return view('category', [
-//         'name' => $type->name,
-//         'category' => $type->name
-//     ]);
-// });
-
-// Chart --------------------------------------------------------------------
-
+/*
+|--------------------------------------------------------------------------
+| Route Chart - User
+|--------------------------------------------------------------------------
+*/
 Route::get('/chart', function () {
     return view('page/chart', [
         "title" => "chart"
     ]);
 });
 
+
+/*
+|--------------------------------------------------------------------------
+| Route Goal - User
+|--------------------------------------------------------------------------
+*/
+
 Route::get('/goal', function () {
     return view('page/goal', [
         "title" => "goal"
     ]);
+});
+
+
+/*
+|--------------------------------------------------------------------------
+| Route Master
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+Route::get('/mainpage', function () {
+    return view('page/master/homemaster');
+});
+
+/*
+|--------------------------------------------------------------------------
+| Route Inbox - Master
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/maininbox', function () {
+    return view('welcome');
+});
+
+/*
+|--------------------------------------------------------------------------
+| Route Review - Master
+|--------------------------------------------------------------------------
+*/
+
+
+Route::get('/review', function () {
+    return view('welcome');
+});
+
+/*
+|--------------------------------------------------------------------------
+| Route Task - Master
+|--------------------------------------------------------------------------
+*/
+
+
+Route::get('/taskmaster', function () {
+    return view('welcome');
+});
+
+/*
+|--------------------------------------------------------------------------
+| Route User Management - Master
+|--------------------------------------------------------------------------
+*/
+
+
+Route::get('/usermanagement', function () {
+    return view('welcome');
+});
+
+/*
+|--------------------------------------------------------------------------
+| Route 
+|--------------------------------------------------------------------------
+*/
+
+
+Route::get('/goalmaster', function () {
+    return view('welcome');
 });
