@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Inbox;
 use App\Models\Task;
 use App\Models\Type;
+use App\Models\Project;
 
 class DatabaseSeeder extends Seeder
 {
@@ -28,6 +29,13 @@ class DatabaseSeeder extends Seeder
         Type::create([
             'name' => 'outbox',
             'slug' => 'outbox'
+        ]);
+
+        // 
+
+        Project::create([
+            'pct_name' => 'Project Tracking',
+            'pct_detail' => 'Membuat applikasi project Tracking'
         ]);
 
         // Inbox::create([

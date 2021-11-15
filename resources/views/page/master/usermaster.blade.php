@@ -7,7 +7,22 @@
 <div class="home">
     <div class="homecontent">
     @include('partials.navigbar')
-        <h1>test</h1>
+        
+
+
+        @@foreach ($projects as $project)
+            <div class="containier">
+                <div class="row">
+                    
+                </div>
+            </div>
+        @endforeach
+
+
+
+
+
+
     </div>
     
 </div>
