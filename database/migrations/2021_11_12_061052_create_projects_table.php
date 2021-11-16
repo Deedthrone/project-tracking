@@ -18,7 +18,7 @@ class CreateProjectsTable extends Migration
             $table->string('pct_name');
             $table->string('pct_detail');
             $table->string('pct_category');
-            $table->foreignId('task_id');
+            // $table->foreignId('task_id');
             $table->timestamps();
         });
     }

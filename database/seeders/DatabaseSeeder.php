@@ -35,7 +35,8 @@ class DatabaseSeeder extends Seeder
 
         Project::create([
             'pct_name' => 'Project Tracking',
-            'pct_detail' => 'Membuat applikasi project Tracking'
+            'pct_detail' => 'Tugas pada kuliah praktek pada PT Kreasi Informatika Mandiri',
+            'pct_category' => 'Membuat applikasi project Tracking'
         ]);
 
         // Inbox::create([
