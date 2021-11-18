@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\InboxController;
 use App\Http\Controllers\TaskController;
+use App\Http\Controllers\HomeuserController;
 use App\Models\Type;
 
 // Laravel Welcome
@@ -36,11 +37,8 @@ Route::get('/', function () {
 |--------------------------------------------------------------------------
 */
 
-Route::get('/home', function () {
-    return view('page/home', [
-        "title" => "Home"
-    ]);
-});
+Route::get('/home', [HomeuserController::class, 'index']);
+
 
 /*
 |--------------------------------------------------------------------------
@@ -123,7 +121,7 @@ Route::get('/mainpage', function () {
 */
 
 Route::get('/maininbox', function () {
-    return view('welcome');
+    return view('page/master/masterinbox');
 });
 
 /*
@@ -134,7 +132,7 @@ Route::get('/maininbox', function () {
 
 
 Route::get('/review', function () {
-    return view('welcome');
+    return view('page/master/reviewmaster');
 });
 
 /*
@@ -145,7 +143,7 @@ Route::get('/review', function () {
 
 
 Route::get('/taskmaster', function () {
-    return view('welcome');
+    return view('taskmaster');
 });
 
 /*
